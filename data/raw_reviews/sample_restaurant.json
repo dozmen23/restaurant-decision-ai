@@ -1,0 +1,27 @@
+{
+  "restaurantId": "rest_001",
+  "restaurantName": "Sunset Bosphorus",
+  "overallRating": 4.5,
+  "reviews": [
+    {
+      "reviewId": "r1",
+      "text": "Amazing food and very friendly staff. The atmosphere was lovely.",
+      "publishTime": "2026-04-01T19:30:00Z"
+    },
+    {
+      "reviewId": "r2",
+      "text": "Great view and romantic ambiance, but service was a bit slow.",
+      "publishTime": "2026-04-02T20:00:00Z"
+    },
+    {
+      "reviewId": "r3",
+      "text": "The food was delicious but the place was crowded.",
+      "publishTime": "2026-04-03T18:15:00Z"
+    },
+    {
+      "reviewId": "r4",
+      "text": "Clean place, polite staff, and nice for a date.",
+      "publishTime": "2026-04-04T21:00:00Z"
+    }
+  ]
+}
