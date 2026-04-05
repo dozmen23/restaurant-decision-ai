@@ -22,6 +22,16 @@
       "reviewId": "r4",
       "text": "Clean place, polite staff, and nice for a date.",
       "publishTime": "2026-04-04T21:00:00Z"
-    }
+    },
+    {
+        "reviewId": "r5",
+        "text": "good",
+        "publishTime": "2026-04-04T21:10:00Z"
+        },
+        {
+        "reviewId": "r6",
+        "text": "👍",
+        "publishTime": "2026-04-04T21:12:00Z"
+}
   ]
 }

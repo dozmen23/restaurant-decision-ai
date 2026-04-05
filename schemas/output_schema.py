@@ -5,6 +5,11 @@ from typing import Optional, Literal
 EvidenceLabel = Literal["weak", "moderate", "strong"]
 
 
+class QualityCheck(BaseModel):
+    isUsable: bool
+    reason: str
+
+
 class PropertySignal(BaseModel):
     mentioned: bool
     sentiment: Optional[float] = None
@@ -16,7 +21,14 @@ class PropertySignal(BaseModel):
 class DetailedReviewAnalysisItem(BaseModel):
     reviewId: str
     text: str
+    qualityCheck: QualityCheck
     propertySignals: dict[str, PropertySignal]
+
+
+class RejectedReviewItem(BaseModel):
+    reviewId: str
+    text: str
+    qualityCheck: QualityCheck
 
 
 class PropertyEvidence(BaseModel):
@@ -36,6 +48,7 @@ class PropertyScore(BaseModel):
 class ReviewSnapshot(BaseModel):
     totalReviewsFetched: int
     reviewsProcessed: int
+    reviewsRejected: int
     lastReviewPublishTime: Optional[str] = None
     analysisVersion: str
     analyzedAt: str
@@ -52,6 +65,7 @@ class DetailedAnalysisOutput(BaseModel):
     restaurantName: str
     overallRating: float
     detailedReviewAnalysis: list[DetailedReviewAnalysisItem]
+    rejectedReviews: list[RejectedReviewItem]
 
 
 class RestaurantScoresOutput(BaseModel):

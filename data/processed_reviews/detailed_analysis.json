@@ -6,6 +6,10 @@
     {
       "reviewId": "r1",
       "text": "Amazing food and very friendly staff. The atmosphere was lovely.",
+      "qualityCheck": {
+        "isUsable": true,
+        "reason": "accepted"
+      },
       "propertySignals": {
         "foodQuality": {
           "mentioned": true,
@@ -75,6 +79,10 @@
     {
       "reviewId": "r2",
       "text": "Great view and romantic ambiance, but service was a bit slow.",
+      "qualityCheck": {
+        "isUsable": true,
+        "reason": "accepted"
+      },
       "propertySignals": {
         "foodQuality": {
           "mentioned": false,
@@ -146,6 +154,10 @@
     {
       "reviewId": "r3",
       "text": "The food was delicious but the place was crowded.",
+      "qualityCheck": {
+        "isUsable": true,
+        "reason": "accepted"
+      },
       "propertySignals": {
         "foodQuality": {
           "mentioned": true,
@@ -210,6 +222,10 @@
     {
       "reviewId": "r4",
       "text": "Clean place, polite staff, and nice for a date.",
+      "qualityCheck": {
+        "isUsable": true,
+        "reason": "accepted"
+      },
       "propertySignals": {
         "foodQuality": {
           "mentioned": false,
@@ -273,6 +289,24 @@
           "matchedKeywords": [],
           "polarity": null
         }
+      }
+    }
+  ],
+  "rejectedReviews": [
+    {
+      "reviewId": "r5",
+      "text": "good",
+      "qualityCheck": {
+        "isUsable": false,
+        "reason": "too_short"
+      }
+    },
+    {
+      "reviewId": "r6",
+      "text": "👍",
+      "qualityCheck": {
+        "isUsable": false,
+        "reason": "no_meaningful_text"
       }
     }
   ]

@@ -59,28 +59,29 @@ def analyze_review(text: str) -> dict:
     return results
 
 
-def analyze_reviews_detailed(reviews: list[dict]) -> list[dict]:
+def analyze_reviews_detailed(usable_reviews: list[dict]) -> list[dict]:
     detailed_results = []
 
-    for review in reviews:
+    for review in usable_reviews:
         analysis = analyze_review(review["text"])
         detailed_results.append({
             "reviewId": review["reviewId"],
             "text": review["text"],
+            "qualityCheck": review["qualityCheck"],
             "propertySignals": analysis
         })
 
     return detailed_results
 
 
-def aggregate_reviews(reviews: list[dict]) -> dict:
+def aggregate_reviews(usable_reviews: list[dict]) -> dict:
     property_scores = defaultdict(list)
     property_keywords = defaultdict(Counter)
     property_review_ids = defaultdict(list)
     property_review_snippets = defaultdict(list)
     global_keyword_counter = Counter()
 
-    for review in reviews:
+    for review in usable_reviews:
         review_id = review["reviewId"]
         review_text = review["text"]
         review_snippet = make_snippet(review_text)

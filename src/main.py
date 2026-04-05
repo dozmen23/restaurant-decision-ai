@@ -11,6 +11,7 @@ from schemas.output_schema import (
 )
 from src.baseline_extractor import analyze_reviews_detailed, aggregate_reviews
 from src.property_manifest import build_property_manifest
+from src.review_quality import filter_usable_reviews
 
 
 def main():
@@ -25,8 +26,10 @@ def main():
     restaurant_data = RestaurantReviews(**raw_data)
     review_dicts = [review.model_dump() for review in restaurant_data.reviews]
 
-    detailed_results = analyze_reviews_detailed(review_dicts)
-    aggregated_bundle = aggregate_reviews(review_dicts)
+    usable_reviews, rejected_reviews = filter_usable_reviews(review_dicts)
+
+    detailed_results = analyze_reviews_detailed(usable_reviews)
+    aggregated_bundle = aggregate_reviews(usable_reviews)
     property_manifest = build_property_manifest()
 
     review_times = [review.publishTime for review in restaurant_data.reviews]
@@ -36,7 +39,15 @@ def main():
         restaurantId=restaurant_data.restaurantId,
         restaurantName=restaurant_data.restaurantName,
         overallRating=restaurant_data.overallRating,
-        detailedReviewAnalysis=detailed_results
+        detailedReviewAnalysis=detailed_results,
+        rejectedReviews=[
+            {
+                "reviewId": review["reviewId"],
+                "text": review["text"],
+                "qualityCheck": review["qualityCheck"]
+            }
+            for review in rejected_reviews
+        ]
     )
 
     scores_payload = RestaurantScoresOutput(
@@ -45,9 +56,10 @@ def main():
         overallRating=restaurant_data.overallRating,
         reviewSnapshot=ReviewSnapshot(
             totalReviewsFetched=len(restaurant_data.reviews),
-            reviewsProcessed=len(review_dicts),
+            reviewsProcessed=len(usable_reviews),
+            reviewsRejected=len(rejected_reviews),
             lastReviewPublishTime=last_review_time,
-            analysisVersion="baseline-keyword-v1",
+            analysisVersion="baseline-keyword-v2-quality-filter",
             analyzedAt=datetime.now(timezone.utc).isoformat()
         ),
         reviewBasedScores=aggregated_bundle["reviewBasedScores"],
@@ -69,6 +81,8 @@ def main():
     print(f"\nDetailed analysis saved to: {detailed_output_path}")
     print(f"Restaurant scores saved to: {scores_output_path}")
     print(f"Property manifest saved to: {manifest_output_path}")
+    print(f"Usable reviews: {len(usable_reviews)}")
+    print(f"Rejected reviews: {len(rejected_reviews)}")
 
 
 if __name__ == "__main__":

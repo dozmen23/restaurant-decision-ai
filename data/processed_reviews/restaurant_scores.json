@@ -3,11 +3,12 @@
   "restaurantName": "Sunset Bosphorus",
   "overallRating": 4.5,
   "reviewSnapshot": {
-    "totalReviewsFetched": 4,
+    "totalReviewsFetched": 6,
     "reviewsProcessed": 4,
-    "lastReviewPublishTime": "2026-04-04T21:00:00Z",
-    "analysisVersion": "baseline-keyword-v1",
-    "analyzedAt": "2026-04-05T15:16:19.571047+00:00"
+    "reviewsRejected": 2,
+    "lastReviewPublishTime": "2026-04-04T21:12:00Z",
+    "analysisVersion": "baseline-keyword-v2-quality-filter",
+    "analyzedAt": "2026-04-05T15:31:16.392084+00:00"
   },
   "reviewBasedScores": {
     "foodQuality": {
