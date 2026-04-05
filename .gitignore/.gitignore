@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Data (istersen saklayabilirsin ama genelde ignore edilir)
+data/processed_reviews/

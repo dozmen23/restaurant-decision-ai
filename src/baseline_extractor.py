@@ -38,8 +38,11 @@ def analyze_review(text: str) -> dict:
     results = {}
 
     for prop, keyword_groups in PROPERTY_KEYWORDS.items():
-        pos_hits = sum(1 for kw in keyword_groups["positive"] if kw in text_lower)
-        neg_hits = sum(1 for kw in keyword_groups["negative"] if kw in text_lower)
+        positive_matches = [kw for kw in keyword_groups["positive"] if kw in text_lower]
+        negative_matches = [kw for kw in keyword_groups["negative"] if kw in text_lower]
+
+        pos_hits = len(positive_matches)
+        neg_hits = len(negative_matches)
 
         mentioned = (pos_hits + neg_hits) > 0
 
@@ -47,7 +50,9 @@ def analyze_review(text: str) -> dict:
             results[prop] = {
                 "mentioned": False,
                 "sentiment": None,
-                "score": None
+                "score": None,
+                "matchedKeywords": [],
+                "polarity": None
             }
             continue
 
@@ -55,18 +60,37 @@ def analyze_review(text: str) -> dict:
 
         if raw_score > 0:
             sentiment = 0.85
+            polarity = "positive"
         elif raw_score < 0:
             sentiment = 0.20
+            polarity = "negative"
         else:
             sentiment = 0.50
+            polarity = "neutral"
 
         results[prop] = {
             "mentioned": True,
             "sentiment": sentiment,
-            "score": int(sentiment * 100)
+            "score": int(sentiment * 100),
+            "matchedKeywords": positive_matches + negative_matches,
+            "polarity": polarity
         }
 
     return results
+
+
+def analyze_reviews_detailed(reviews: list[dict]) -> list[dict]:
+    detailed_results = []
+
+    for review in reviews:
+        analysis = analyze_review(review["text"])
+        detailed_results.append({
+            "reviewId": review["reviewId"],
+            "text": review["text"],
+            "propertySignals": analysis
+        })
+
+    return detailed_results
 
 
 def aggregate_reviews(reviews: list[dict]) -> dict:
