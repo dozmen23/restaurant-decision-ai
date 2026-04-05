@@ -1,0 +1,45 @@
+{
+  "totalProperties": 8,
+  "properties": [
+    {
+      "key": "foodQuality",
+      "displayName": "Food Quality",
+      "description": "Taste, flavor, and overall food satisfaction."
+    },
+    {
+      "key": "staffFriendliness",
+      "displayName": "Staff Friendliness",
+      "description": "Friendliness, politeness, and helpfulness of staff."
+    },
+    {
+      "key": "ambience",
+      "displayName": "Ambience",
+      "description": "Atmosphere, mood, decor, and overall environment."
+    },
+    {
+      "key": "speed",
+      "displayName": "Speed",
+      "description": "Service speed and waiting time."
+    },
+    {
+      "key": "viewQuality",
+      "displayName": "View Quality",
+      "description": "Quality of the view, scenery, or special visual setting."
+    },
+    {
+      "key": "dateSuitability",
+      "displayName": "Date Suitability",
+      "description": "Suitability for romantic dinners or special dates."
+    },
+    {
+      "key": "cleanliness",
+      "displayName": "Cleanliness",
+      "description": "Cleanliness and hygiene of the place."
+    },
+    {
+      "key": "groupSuitability",
+      "displayName": "Group Suitability",
+      "description": "Suitability for families or groups of friends."
+    }
+  ]
+}

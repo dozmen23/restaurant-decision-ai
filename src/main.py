@@ -10,12 +10,14 @@ from schemas.output_schema import (
     SummaryBlock,
 )
 from src.baseline_extractor import analyze_reviews_detailed, aggregate_reviews
+from src.property_manifest import build_property_manifest
 
 
 def main():
     input_path = Path("data/raw_reviews/sample_restaurant.json")
     detailed_output_path = Path("data/processed_reviews/detailed_analysis.json")
     scores_output_path = Path("data/processed_reviews/restaurant_scores.json")
+    manifest_output_path = Path("data/processed_reviews/property_manifest.json")
 
     with open(input_path, "r", encoding="utf-8") as f:
         raw_data = json.load(f)
@@ -25,6 +27,7 @@ def main():
 
     detailed_results = analyze_reviews_detailed(review_dicts)
     aggregated_bundle = aggregate_reviews(review_dicts)
+    property_manifest = build_property_manifest()
 
     review_times = [review.publishTime for review in restaurant_data.reviews]
     last_review_time = max(review_times) if review_times else None
@@ -60,8 +63,12 @@ def main():
     with open(scores_output_path, "w", encoding="utf-8") as f:
         json.dump(scores_payload.model_dump(), f, ensure_ascii=False, indent=2)
 
+    with open(manifest_output_path, "w", encoding="utf-8") as f:
+        json.dump(property_manifest, f, ensure_ascii=False, indent=2)
+
     print(f"\nDetailed analysis saved to: {detailed_output_path}")
     print(f"Restaurant scores saved to: {scores_output_path}")
+    print(f"Property manifest saved to: {manifest_output_path}")
 
 
 if __name__ == "__main__":

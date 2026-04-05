@@ -7,50 +7,140 @@
     "reviewsProcessed": 4,
     "lastReviewPublishTime": "2026-04-04T21:00:00Z",
     "analysisVersion": "baseline-keyword-v1",
-    "analyzedAt": "2026-04-05T15:07:34.095433+00:00"
+    "analyzedAt": "2026-04-05T15:16:19.571047+00:00"
   },
   "reviewBasedScores": {
     "foodQuality": {
       "score": 85.0,
       "confidence": 0.7,
       "supportCount": 2,
-      "evidenceLabel": "moderate"
+      "evidenceLabel": "moderate",
+      "evidence": {
+        "topMatchedKeywords": [
+          "amazing food",
+          "delicious"
+        ],
+        "supportingReviewIds": [
+          "r1",
+          "r3"
+        ],
+        "supportingReviewSnippets": [
+          "Amazing food and very friendly staff. The atmosphere was lovely.",
+          "The food was delicious but the place was crowded."
+        ]
+      }
     },
     "staffFriendliness": {
       "score": 85.0,
       "confidence": 0.7,
       "supportCount": 2,
-      "evidenceLabel": "moderate"
+      "evidenceLabel": "moderate",
+      "evidence": {
+        "topMatchedKeywords": [
+          "friendly staff",
+          "polite"
+        ],
+        "supportingReviewIds": [
+          "r1",
+          "r4"
+        ],
+        "supportingReviewSnippets": [
+          "Amazing food and very friendly staff. The atmosphere was lovely.",
+          "Clean place, polite staff, and nice for a date."
+        ]
+      }
     },
     "ambience": {
       "score": 85.0,
       "confidence": 0.7,
       "supportCount": 2,
-      "evidenceLabel": "moderate"
+      "evidenceLabel": "moderate",
+      "evidence": {
+        "topMatchedKeywords": [
+          "atmosphere",
+          "lovely",
+          "ambiance"
+        ],
+        "supportingReviewIds": [
+          "r1",
+          "r2"
+        ],
+        "supportingReviewSnippets": [
+          "Amazing food and very friendly staff. The atmosphere was lovely.",
+          "Great view and romantic ambiance, but service was a bit slow."
+        ]
+      }
     },
     "speed": {
       "score": 20.0,
       "confidence": 0.6,
       "supportCount": 1,
-      "evidenceLabel": "weak"
+      "evidenceLabel": "weak",
+      "evidence": {
+        "topMatchedKeywords": [
+          "slow"
+        ],
+        "supportingReviewIds": [
+          "r2"
+        ],
+        "supportingReviewSnippets": [
+          "Great view and romantic ambiance, but service was a bit slow."
+        ]
+      }
     },
     "viewQuality": {
       "score": 85.0,
       "confidence": 0.6,
       "supportCount": 1,
-      "evidenceLabel": "weak"
+      "evidenceLabel": "weak",
+      "evidence": {
+        "topMatchedKeywords": [
+          "great view"
+        ],
+        "supportingReviewIds": [
+          "r2"
+        ],
+        "supportingReviewSnippets": [
+          "Great view and romantic ambiance, but service was a bit slow."
+        ]
+      }
     },
     "dateSuitability": {
       "score": 85.0,
       "confidence": 0.7,
       "supportCount": 2,
-      "evidenceLabel": "moderate"
+      "evidenceLabel": "moderate",
+      "evidence": {
+        "topMatchedKeywords": [
+          "romantic",
+          "nice for a date"
+        ],
+        "supportingReviewIds": [
+          "r2",
+          "r4"
+        ],
+        "supportingReviewSnippets": [
+          "Great view and romantic ambiance, but service was a bit slow.",
+          "Clean place, polite staff, and nice for a date."
+        ]
+      }
     },
     "cleanliness": {
       "score": 85.0,
       "confidence": 0.6,
       "supportCount": 1,
-      "evidenceLabel": "weak"
+      "evidenceLabel": "weak",
+      "evidence": {
+        "topMatchedKeywords": [
+          "clean"
+        ],
+        "supportingReviewIds": [
+          "r4"
+        ],
+        "supportingReviewSnippets": [
+          "Clean place, polite staff, and nice for a date."
+        ]
+      }
     }
   },
   "topReviewTags": [
@@ -62,16 +152,16 @@
   ],
   "summary": {
     "strengths": [
-      "foodQuality",
-      "staffFriendliness",
-      "ambience",
-      "viewQuality",
-      "dateSuitability",
-      "cleanliness"
+      "Food Quality",
+      "Staff Friendliness",
+      "Ambience",
+      "View Quality",
+      "Date Suitability",
+      "Cleanliness"
     ],
     "weaknesses": [
-      "speed"
+      "Speed"
     ],
-    "oneParagraphSummary": "Review analysis suggests that this restaurant stands out mainly through the following aspects. Strongest signals are foodQuality, staffFriendliness, ambience, viewQuality, dateSuitability, cleanliness. Weaker signals are speed."
+    "oneParagraphSummary": "Review analysis suggests that this restaurant stands out mainly through the following aspects. Strongest signals are Food Quality, Staff Friendliness, Ambience, View Quality, Date Suitability, Cleanliness. Weaker signals are Speed."
   }
 }

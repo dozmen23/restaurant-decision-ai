@@ -19,11 +19,18 @@ class DetailedReviewAnalysisItem(BaseModel):
     propertySignals: dict[str, PropertySignal]
 
 
+class PropertyEvidence(BaseModel):
+    topMatchedKeywords: list[str]
+    supportingReviewIds: list[str]
+    supportingReviewSnippets: list[str]
+
+
 class PropertyScore(BaseModel):
     score: float
     confidence: float
     supportCount: int
     evidenceLabel: EvidenceLabel
+    evidence: PropertyEvidence
 
 
 class ReviewSnapshot(BaseModel):
