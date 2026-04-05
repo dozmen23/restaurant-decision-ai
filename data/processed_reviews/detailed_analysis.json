@@ -62,6 +62,13 @@
           "score": null,
           "matchedKeywords": [],
           "polarity": null
+        },
+        "groupSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         }
       }
     },
@@ -126,6 +133,13 @@
           "score": null,
           "matchedKeywords": [],
           "polarity": null
+        },
+        "groupSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         }
       }
     },
@@ -178,6 +192,13 @@
           "polarity": null
         },
         "cleanliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "groupSuitability": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
@@ -244,6 +265,13 @@
             "clean"
           ],
           "polarity": "positive"
+        },
+        "groupSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         }
       }
     }

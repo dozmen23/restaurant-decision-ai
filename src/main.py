@@ -3,6 +3,12 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 from schemas.review_schema import RestaurantReviews
+from schemas.output_schema import (
+    DetailedAnalysisOutput,
+    RestaurantScoresOutput,
+    ReviewSnapshot,
+    SummaryBlock,
+)
 from src.baseline_extractor import analyze_reviews_detailed, aggregate_reviews
 
 
@@ -23,36 +29,36 @@ def main():
     review_times = [review.publishTime for review in restaurant_data.reviews]
     last_review_time = max(review_times) if review_times else None
 
-    detailed_payload = {
-        "restaurantId": restaurant_data.restaurantId,
-        "restaurantName": restaurant_data.restaurantName,
-        "overallRating": restaurant_data.overallRating,
-        "detailedReviewAnalysis": detailed_results
-    }
+    detailed_payload = DetailedAnalysisOutput(
+        restaurantId=restaurant_data.restaurantId,
+        restaurantName=restaurant_data.restaurantName,
+        overallRating=restaurant_data.overallRating,
+        detailedReviewAnalysis=detailed_results
+    )
 
-    scores_payload = {
-        "restaurantId": restaurant_data.restaurantId,
-        "restaurantName": restaurant_data.restaurantName,
-        "overallRating": restaurant_data.overallRating,
-        "reviewSnapshot": {
-            "totalReviewsFetched": len(restaurant_data.reviews),
-            "reviewsProcessed": len(review_dicts),
-            "lastReviewPublishTime": last_review_time,
-            "analysisVersion": "baseline-keyword-v1",
-            "analyzedAt": datetime.now(timezone.utc).isoformat()
-        },
-        "reviewBasedScores": aggregated_bundle["reviewBasedScores"],
-        "topReviewTags": aggregated_bundle["topReviewTags"],
-        "summary": aggregated_bundle["summary"]
-    }
+    scores_payload = RestaurantScoresOutput(
+        restaurantId=restaurant_data.restaurantId,
+        restaurantName=restaurant_data.restaurantName,
+        overallRating=restaurant_data.overallRating,
+        reviewSnapshot=ReviewSnapshot(
+            totalReviewsFetched=len(restaurant_data.reviews),
+            reviewsProcessed=len(review_dicts),
+            lastReviewPublishTime=last_review_time,
+            analysisVersion="baseline-keyword-v1",
+            analyzedAt=datetime.now(timezone.utc).isoformat()
+        ),
+        reviewBasedScores=aggregated_bundle["reviewBasedScores"],
+        topReviewTags=aggregated_bundle["topReviewTags"],
+        summary=SummaryBlock(**aggregated_bundle["summary"])
+    )
 
     detailed_output_path.parent.mkdir(parents=True, exist_ok=True)
 
     with open(detailed_output_path, "w", encoding="utf-8") as f:
-        json.dump(detailed_payload, f, ensure_ascii=False, indent=2)
+        json.dump(detailed_payload.model_dump(), f, ensure_ascii=False, indent=2)
 
     with open(scores_output_path, "w", encoding="utf-8") as f:
-        json.dump(scores_payload, f, ensure_ascii=False, indent=2)
+        json.dump(scores_payload.model_dump(), f, ensure_ascii=False, indent=2)
 
     print(f"\nDetailed analysis saved to: {detailed_output_path}")
     print(f"Restaurant scores saved to: {scores_output_path}")
