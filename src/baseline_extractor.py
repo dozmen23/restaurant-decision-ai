@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 
 PROPERTY_KEYWORDS = {
@@ -95,6 +95,8 @@ def analyze_reviews_detailed(reviews: list[dict]) -> list[dict]:
 
 def aggregate_reviews(reviews: list[dict]) -> dict:
     property_scores = defaultdict(list)
+    property_polarities = defaultdict(list)
+    keyword_counter = Counter()
 
     for review in reviews:
         review_text = review["text"]
@@ -103,19 +105,66 @@ def aggregate_reviews(reviews: list[dict]) -> dict:
         for prop, result in analysis.items():
             if result["mentioned"] and result["sentiment"] is not None:
                 property_scores[prop].append(result["sentiment"])
+                property_polarities[prop].append(result["polarity"])
+                keyword_counter.update(result["matchedKeywords"])
 
-    final_output = {}
+    final_scores = {}
 
     for prop, sentiments in property_scores.items():
         avg_sentiment = sum(sentiments) / len(sentiments)
-        final_output[prop] = {
+        support_count = len(sentiments)
+
+        confidence = min(1.0, 0.5 + (support_count * 0.1))
+
+        final_scores[prop] = {
             "score": round(avg_sentiment * 100, 2),
-            "supportCount": len(sentiments),
+            "confidence": round(confidence, 2),
+            "supportCount": support_count,
             "evidenceLabel": (
-                "strong" if len(sentiments) >= 3
-                else "moderate" if len(sentiments) == 2
+                "strong" if support_count >= 3
+                else "moderate" if support_count == 2
                 else "weak"
             )
         }
 
-    return final_output
+    top_review_tags = [tag for tag, _ in keyword_counter.most_common(5)]
+
+    strengths = []
+    weaknesses = []
+
+    for prop, info in final_scores.items():
+        if info["score"] >= 80:
+            strengths.append(prop)
+        elif info["score"] <= 40:
+            weaknesses.append(prop)
+
+    summary_text = build_summary(final_scores, strengths, weaknesses)
+
+    return {
+        "reviewBasedScores": final_scores,
+        "topReviewTags": top_review_tags,
+        "summary": {
+            "strengths": strengths,
+            "weaknesses": weaknesses,
+            "oneParagraphSummary": summary_text
+        }
+    }
+
+
+def build_summary(final_scores: dict, strengths: list[str], weaknesses: list[str]) -> str:
+    if not final_scores:
+        return "Not enough review evidence to generate a meaningful summary."
+
+    strong_part = (
+        f"Strongest signals are {', '.join(strengths)}."
+        if strengths else
+        "No clearly dominant strengths were detected."
+    )
+
+    weak_part = (
+        f"Weaker signals are {', '.join(weaknesses)}."
+        if weaknesses else
+        "No major weaknesses were detected from the current reviews."
+    )
+
+    return f"Review analysis suggests that this restaurant stands out mainly through the following aspects. {strong_part} {weak_part}"

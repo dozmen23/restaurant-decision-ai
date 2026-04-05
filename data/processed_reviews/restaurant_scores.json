@@ -1,0 +1,77 @@
+{
+  "restaurantId": "rest_001",
+  "restaurantName": "Sunset Bosphorus",
+  "overallRating": 4.5,
+  "reviewSnapshot": {
+    "totalReviewsFetched": 4,
+    "reviewsProcessed": 4,
+    "lastReviewPublishTime": "2026-04-04T21:00:00Z",
+    "analysisVersion": "baseline-keyword-v1",
+    "analyzedAt": "2026-04-05T14:56:18.455697+00:00"
+  },
+  "reviewBasedScores": {
+    "foodQuality": {
+      "score": 85.0,
+      "confidence": 0.7,
+      "supportCount": 2,
+      "evidenceLabel": "moderate"
+    },
+    "staffFriendliness": {
+      "score": 85.0,
+      "confidence": 0.7,
+      "supportCount": 2,
+      "evidenceLabel": "moderate"
+    },
+    "ambience": {
+      "score": 85.0,
+      "confidence": 0.7,
+      "supportCount": 2,
+      "evidenceLabel": "moderate"
+    },
+    "speed": {
+      "score": 20.0,
+      "confidence": 0.6,
+      "supportCount": 1,
+      "evidenceLabel": "weak"
+    },
+    "viewQuality": {
+      "score": 85.0,
+      "confidence": 0.6,
+      "supportCount": 1,
+      "evidenceLabel": "weak"
+    },
+    "dateSuitability": {
+      "score": 85.0,
+      "confidence": 0.7,
+      "supportCount": 2,
+      "evidenceLabel": "moderate"
+    },
+    "cleanliness": {
+      "score": 85.0,
+      "confidence": 0.6,
+      "supportCount": 1,
+      "evidenceLabel": "weak"
+    }
+  },
+  "topReviewTags": [
+    "romantic",
+    "amazing food",
+    "friendly staff",
+    "atmosphere",
+    "lovely"
+  ],
+  "summary": {
+    "strengths": [
+      "foodQuality",
+      "staffFriendliness",
+      "ambience",
+      "viewQuality",
+      "dateSuitability",
+      "cleanliness"
+    ],
+    "weaknesses": [
+      "speed"
+    ],
+    "oneParagraphSummary": "Review analysis suggests that this restaurant stands out mainly through the following aspects. Strongest signals are foodQuality, staffFriendliness, ambience, viewQuality, dateSuitability, cleanliness. Weaker signals are speed."
+  }
+}

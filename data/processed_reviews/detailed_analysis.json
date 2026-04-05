@@ -1,0 +1,251 @@
+{
+  "restaurantId": "rest_001",
+  "restaurantName": "Sunset Bosphorus",
+  "overallRating": 4.5,
+  "detailedReviewAnalysis": [
+    {
+      "reviewId": "r1",
+      "text": "Amazing food and very friendly staff. The atmosphere was lovely.",
+      "propertySignals": {
+        "foodQuality": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "amazing food"
+          ],
+          "polarity": "positive"
+        },
+        "staffFriendliness": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "friendly staff"
+          ],
+          "polarity": "positive"
+        },
+        "ambience": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "atmosphere",
+            "lovely"
+          ],
+          "polarity": "positive"
+        },
+        "speed": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "viewQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "dateSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "cleanliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        }
+      }
+    },
+    {
+      "reviewId": "r2",
+      "text": "Great view and romantic ambiance, but service was a bit slow.",
+      "propertySignals": {
+        "foodQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "staffFriendliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "ambience": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "ambiance",
+            "romantic"
+          ],
+          "polarity": "positive"
+        },
+        "speed": {
+          "mentioned": true,
+          "sentiment": 0.2,
+          "score": 20,
+          "matchedKeywords": [
+            "slow"
+          ],
+          "polarity": "negative"
+        },
+        "viewQuality": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "great view"
+          ],
+          "polarity": "positive"
+        },
+        "dateSuitability": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "romantic"
+          ],
+          "polarity": "positive"
+        },
+        "cleanliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        }
+      }
+    },
+    {
+      "reviewId": "r3",
+      "text": "The food was delicious but the place was crowded.",
+      "propertySignals": {
+        "foodQuality": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "delicious"
+          ],
+          "polarity": "positive"
+        },
+        "staffFriendliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "ambience": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "speed": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "viewQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "dateSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "cleanliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        }
+      }
+    },
+    {
+      "reviewId": "r4",
+      "text": "Clean place, polite staff, and nice for a date.",
+      "propertySignals": {
+        "foodQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "staffFriendliness": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "polite"
+          ],
+          "polarity": "positive"
+        },
+        "ambience": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "speed": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "viewQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "dateSuitability": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "nice for a date"
+          ],
+          "polarity": "positive"
+        },
+        "cleanliness": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "clean"
+          ],
+          "polarity": "positive"
+        }
+      }
+    }
+  ]
+}
