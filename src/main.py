@@ -15,22 +15,13 @@ from src.baseline_extractor import (
     aggregate_reviews,
     build_meta_metrics,
 )
+from src.adapters.google_places_adapter import adapt_places_payload
 from src.property_manifest import build_property_manifest
 from src.review_quality import filter_usable_reviews
 
 
-def main():
-    input_path = Path("data/raw_reviews/sample_restaurant.json")
-    detailed_output_path = Path("data/processed_reviews/detailed_analysis.json")
-    scores_output_path = Path("data/processed_reviews/restaurant_scores.json")
-    manifest_output_path = Path("data/processed_reviews/property_manifest.json")
-
-    with open(input_path, "r", encoding="utf-8") as f:
-        raw_data = json.load(f)
-
-    restaurant_data = RestaurantReviews(**raw_data)
+def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[DetailedAnalysisOutput, RestaurantScoresOutput, dict]:
     review_dicts = [review.model_dump() for review in restaurant_data.reviews]
-
     usable_reviews, rejected_reviews = filter_usable_reviews(review_dicts)
 
     detailed_results = analyze_reviews_detailed(usable_reviews)
@@ -39,7 +30,6 @@ def main():
         aggregated_bundle["reviewBasedScores"],
         restaurant_data.overallRating,
     )
-    property_manifest = build_property_manifest()
 
     review_times = [review.publishTime for review in restaurant_data.reviews]
     last_review_time = max(review_times) if review_times else None
@@ -77,6 +67,46 @@ def main():
         summary=SummaryBlock(**aggregated_bundle["summary"])
     )
 
+    run_context = {
+        "adaptedReviewCount": len(restaurant_data.reviews),
+        "usableReviewCount": len(usable_reviews),
+    }
+
+    return detailed_payload, scores_payload, run_context
+
+
+def main():
+    input_path = Path("data/raw_reviews/sample_restaurant.json")
+    google_places_input_path = Path("data/raw_reviews/google_places_payload.json")
+    detailed_output_path = Path("data/processed_reviews/detailed_analysis.json")
+    scores_output_path = Path("data/processed_reviews/restaurant_scores.json")
+    manifest_output_path = Path("data/processed_reviews/property_manifest.json")
+    property_manifest = build_property_manifest()
+
+    if google_places_input_path.exists():
+        input_path = google_places_input_path
+        with open(input_path, "r", encoding="utf-8") as f:
+            raw_payload = json.load(f)
+
+        adapted_places = adapt_places_payload(raw_payload)
+        if not adapted_places:
+            raise ValueError("Google Places payload did not produce any adapted places.")
+        selected_place = adapted_places[0]
+        restaurant_data = RestaurantReviews(**selected_place)
+        detailed_payload, scores_payload, run_context = build_pipeline_outputs(
+            restaurant_data
+        )
+        selected_place_name = restaurant_data.restaurantName
+    else:
+        with open(input_path, "r", encoding="utf-8") as f:
+            raw_data = json.load(f)
+
+        restaurant_data = RestaurantReviews(**raw_data)
+        detailed_payload, scores_payload, run_context = build_pipeline_outputs(
+            restaurant_data
+        )
+        selected_place_name = restaurant_data.restaurantName
+
     detailed_output_path.parent.mkdir(parents=True, exist_ok=True)
 
     with open(detailed_output_path, "w", encoding="utf-8") as f:
@@ -91,8 +121,10 @@ def main():
     print(f"\nDetailed analysis saved to: {detailed_output_path}")
     print(f"Restaurant scores saved to: {scores_output_path}")
     print(f"Property manifest saved to: {manifest_output_path}")
-    print(f"Usable reviews: {len(usable_reviews)}")
-    print(f"Rejected reviews: {len(rejected_reviews)}")
+    print(f"Loaded file: {input_path}")
+    print(f"Selected place: {selected_place_name}")
+    print(f"Adapted reviews: {run_context['adaptedReviewCount']}")
+    print(f"Usable reviews: {run_context['usableReviewCount']}")
 
 
 if __name__ == "__main__":
