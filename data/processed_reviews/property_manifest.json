@@ -1,45 +1,75 @@
 {
-  "totalProperties": 8,
+  "totalProperties": 14,
   "properties": [
     {
-      "key": "foodQuality",
-      "displayName": "Food Quality",
-      "description": "Taste, flavor, and overall food satisfaction."
+      "key": "serviceQuality",
+      "displayName": "Service Quality",
+      "description": "Overall quality and reliability of the service experience."
     },
     {
       "key": "staffFriendliness",
       "displayName": "Staff Friendliness",
-      "description": "Friendliness, politeness, and helpfulness of staff."
+      "description": "Warmth, politeness, and helpfulness of staff interactions."
     },
     {
-      "key": "ambience",
-      "displayName": "Ambience",
-      "description": "Atmosphere, mood, decor, and overall environment."
+      "key": "foodQuality",
+      "displayName": "Food Quality",
+      "description": "Taste, freshness, and overall quality of the food."
     },
     {
-      "key": "speed",
-      "displayName": "Speed",
-      "description": "Service speed and waiting time."
+      "key": "valueForMoney",
+      "displayName": "Value For Money",
+      "description": "Whether the price feels justified by the overall experience."
     },
     {
-      "key": "viewQuality",
-      "displayName": "View Quality",
-      "description": "Quality of the view, scenery, or special visual setting."
-    },
-    {
-      "key": "dateSuitability",
-      "displayName": "Date Suitability",
-      "description": "Suitability for romantic dinners or special dates."
+      "key": "portionSatisfaction",
+      "displayName": "Portion Satisfaction",
+      "description": "Satisfaction with portion size and fullness provided."
     },
     {
       "key": "cleanliness",
       "displayName": "Cleanliness",
-      "description": "Cleanliness and hygiene of the place."
+      "description": "Perceived cleanliness of the restaurant and dining environment."
+    },
+    {
+      "key": "speed",
+      "displayName": "Speed",
+      "description": "How quickly food, service, or seating is provided."
+    },
+    {
+      "key": "ambience",
+      "displayName": "Ambience",
+      "description": "Atmosphere, mood, and overall feel of the space."
     },
     {
       "key": "groupSuitability",
       "displayName": "Group Suitability",
-      "description": "Suitability for families or groups of friends."
+      "description": "How suitable the restaurant feels for groups, families, or friends."
+    },
+    {
+      "key": "dateSuitability",
+      "displayName": "Date Suitability",
+      "description": "How appropriate the restaurant feels for a date or romantic outing."
+    },
+    {
+      "key": "repeatVisitIntent",
+      "displayName": "Repeat Visit Intent",
+      "description": "Signals that customers want to come back again."
+    },
+    {
+      "key": "viewQuality",
+      "displayName": "View Quality",
+      "description": "Quality and appeal of the restaurant's view or scenery."
+    },
+    {
+      "key": "luxuryPerception",
+      "displayName": "Luxury Perception",
+      "description": "Signals that the experience feels premium, upscale, or refined."
+    },
+    {
+      "key": "reservationEase",
+      "displayName": "Reservation Ease",
+      "description": "How easy and smooth the reservation process feels."
     }
   ]
 }

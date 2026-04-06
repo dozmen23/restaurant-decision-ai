@@ -11,14 +11,12 @@
         "reason": "accepted"
       },
       "propertySignals": {
-        "foodQuality": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "amazing food"
-          ],
-          "polarity": "positive"
+        "serviceQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "staffFriendliness": {
           "mentioned": true,
@@ -29,31 +27,23 @@
           ],
           "polarity": "positive"
         },
-        "ambience": {
+        "foodQuality": {
           "mentioned": true,
           "sentiment": 0.85,
           "score": 85,
           "matchedKeywords": [
-            "atmosphere",
-            "lovely"
+            "amazing food"
           ],
           "polarity": "positive"
         },
-        "speed": {
+        "valueForMoney": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
           "matchedKeywords": [],
           "polarity": null
         },
-        "viewQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "dateSuitability": {
+        "portionSatisfaction": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
@@ -67,7 +57,56 @@
           "matchedKeywords": [],
           "polarity": null
         },
+        "speed": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "ambience": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
         "groupSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "dateSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "repeatVisitIntent": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "viewQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "luxuryPerception": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "reservationEase": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
@@ -84,7 +123,7 @@
         "reason": "accepted"
       },
       "propertySignals": {
-        "foodQuality": {
+        "serviceQuality": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
@@ -98,33 +137,54 @@
           "matchedKeywords": [],
           "polarity": null
         },
-        "ambience": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "ambiance",
-            "romantic"
-          ],
-          "polarity": "positive"
+        "foodQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "valueForMoney": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "portionSatisfaction": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "cleanliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "speed": {
-          "mentioned": true,
-          "sentiment": 0.2,
-          "score": 20,
-          "matchedKeywords": [
-            "slow"
-          ],
-          "polarity": "negative"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
-        "viewQuality": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "great view"
-          ],
-          "polarity": "positive"
+        "ambience": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "groupSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "dateSuitability": {
           "mentioned": true,
@@ -135,14 +195,30 @@
           ],
           "polarity": "positive"
         },
-        "cleanliness": {
+        "repeatVisitIntent": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
           "matchedKeywords": [],
           "polarity": null
         },
-        "groupSuitability": {
+        "viewQuality": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "great view"
+          ],
+          "polarity": "positive"
+        },
+        "luxuryPerception": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "reservationEase": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
@@ -159,6 +235,20 @@
         "reason": "accepted"
       },
       "propertySignals": {
+        "serviceQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "staffFriendliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
         "foodQuality": {
           "mentioned": true,
           "sentiment": 0.85,
@@ -168,35 +258,14 @@
           ],
           "polarity": "positive"
         },
-        "staffFriendliness": {
+        "valueForMoney": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
           "matchedKeywords": [],
           "polarity": null
         },
-        "ambience": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "speed": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "viewQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "dateSuitability": {
+        "portionSatisfaction": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
@@ -210,7 +279,56 @@
           "matchedKeywords": [],
           "polarity": null
         },
+        "speed": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "ambience": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
         "groupSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "dateSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "repeatVisitIntent": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "viewQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "luxuryPerception": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "reservationEase": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
@@ -227,7 +345,7 @@
         "reason": "accepted"
       },
       "propertySignals": {
-        "foodQuality": {
+        "serviceQuality": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
@@ -239,9 +357,46 @@
           "sentiment": 0.85,
           "score": 85,
           "matchedKeywords": [
-            "polite"
+            "polite staff"
           ],
           "polarity": "positive"
+        },
+        "foodQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "valueForMoney": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "portionSatisfaction": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "cleanliness": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "clean"
+          ],
+          "polarity": "positive"
+        },
+        "speed": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "ambience": {
           "mentioned": false,
@@ -250,7 +405,21 @@
           "matchedKeywords": [],
           "polarity": null
         },
-        "speed": {
+        "groupSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "dateSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "repeatVisitIntent": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
@@ -264,25 +433,14 @@
           "matchedKeywords": [],
           "polarity": null
         },
-        "dateSuitability": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "nice for a date"
-          ],
-          "polarity": "positive"
+        "luxuryPerception": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
-        "cleanliness": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "clean"
-          ],
-          "polarity": "positive"
-        },
-        "groupSuitability": {
+        "reservationEase": {
           "mentioned": false,
           "sentiment": null,
           "score": null,

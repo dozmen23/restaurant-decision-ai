@@ -60,6 +60,20 @@ class SummaryBlock(BaseModel):
     oneParagraphSummary: str
 
 
+class ConsistencyMetaMetric(BaseModel):
+    googleRatingNormalized: float
+    reviewCompositeScoreNormalized: Optional[float] = None
+    mismatchScore: Optional[float] = None
+    consistencyScore: Optional[float] = None
+    evidenceLabel: EvidenceLabel
+    supportingPropertyCount: int
+    insufficientEvidence: bool
+
+
+class MetaMetricsBlock(BaseModel):
+    consistency: ConsistencyMetaMetric
+
+
 class DetailedAnalysisOutput(BaseModel):
     restaurantId: str
     restaurantName: str
@@ -74,5 +88,6 @@ class RestaurantScoresOutput(BaseModel):
     overallRating: float
     reviewSnapshot: ReviewSnapshot
     reviewBasedScores: dict[str, PropertyScore]
+    metaMetrics: MetaMetricsBlock
     topReviewTags: list[str]
     summary: SummaryBlock

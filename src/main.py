@@ -5,11 +5,16 @@ from datetime import datetime, timezone
 from schemas.review_schema import RestaurantReviews
 from schemas.output_schema import (
     DetailedAnalysisOutput,
+    MetaMetricsBlock,
     RestaurantScoresOutput,
     ReviewSnapshot,
     SummaryBlock,
 )
-from src.baseline_extractor import analyze_reviews_detailed, aggregate_reviews
+from src.baseline_extractor import (
+    analyze_reviews_detailed,
+    aggregate_reviews,
+    build_meta_metrics,
+)
 from src.property_manifest import build_property_manifest
 from src.review_quality import filter_usable_reviews
 
@@ -30,6 +35,10 @@ def main():
 
     detailed_results = analyze_reviews_detailed(usable_reviews)
     aggregated_bundle = aggregate_reviews(usable_reviews)
+    meta_metrics = build_meta_metrics(
+        aggregated_bundle["reviewBasedScores"],
+        restaurant_data.overallRating,
+    )
     property_manifest = build_property_manifest()
 
     review_times = [review.publishTime for review in restaurant_data.reviews]
@@ -63,6 +72,7 @@ def main():
             analyzedAt=datetime.now(timezone.utc).isoformat()
         ),
         reviewBasedScores=aggregated_bundle["reviewBasedScores"],
+        metaMetrics=MetaMetricsBlock(**meta_metrics),
         topReviewTags=aggregated_bundle["topReviewTags"],
         summary=SummaryBlock(**aggregated_bundle["summary"])
     )

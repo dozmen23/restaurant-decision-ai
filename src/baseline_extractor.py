@@ -1,5 +1,14 @@
 from collections import defaultdict, Counter
-from config.properties import PROPERTY_DEFINITIONS
+from config.properties import PROPERTY_DEFINITIONS, PROPERTY_ORDER
+
+CONSISTENCY_CORE_PROPERTIES = [
+    "serviceQuality",
+    "staffFriendliness",
+    "foodQuality",
+    "cleanliness",
+    "speed",
+    "ambience",
+]
 
 
 def get_display_name(property_key: str) -> str:
@@ -11,6 +20,28 @@ def make_snippet(text: str, max_len: int = 120) -> str:
     if len(text) <= max_len:
         return text
     return text[: max_len - 3] + "..."
+
+
+def build_empty_property_score() -> dict:
+    return {
+        "score": 0.0,
+        "confidence": 0.0,
+        "supportCount": 0,
+        "evidenceLabel": "weak",
+        "evidence": {
+            "topMatchedKeywords": [],
+            "supportingReviewIds": [],
+            "supportingReviewSnippets": []
+        }
+    }
+
+
+def get_consistency_evidence_label(mismatch_score: float) -> str:
+    if mismatch_score <= 0.10:
+        return "strong"
+    if mismatch_score <= 0.25:
+        return "moderate"
+    return "weak"
 
 
 def analyze_review(text: str) -> dict:
@@ -98,7 +129,13 @@ def aggregate_reviews(usable_reviews: list[dict]) -> dict:
 
     final_scores = {}
 
-    for prop, sentiments in property_scores.items():
+    for prop in PROPERTY_ORDER:
+        sentiments = property_scores[prop]
+
+        if not sentiments:
+            final_scores[prop] = build_empty_property_score()
+            continue
+
         avg_sentiment = sum(sentiments) / len(sentiments)
         support_count = len(sentiments)
         confidence = min(1.0, 0.5 + (support_count * 0.1))
@@ -127,6 +164,8 @@ def aggregate_reviews(usable_reviews: list[dict]) -> dict:
     weaknesses = []
 
     for prop, info in final_scores.items():
+        if info["supportCount"] == 0:
+            continue
         if info["score"] >= 80:
             strengths.append(prop)
         elif info["score"] <= 40:
@@ -141,6 +180,50 @@ def aggregate_reviews(usable_reviews: list[dict]) -> dict:
             "strengths": [get_display_name(p) for p in strengths],
             "weaknesses": [get_display_name(p) for p in weaknesses],
             "oneParagraphSummary": summary_text
+        }
+    }
+
+
+def build_meta_metrics(review_based_scores: dict, overall_rating: float) -> dict:
+    supported_scores = [
+        review_based_scores[property_key]["score"] / 100
+        for property_key in CONSISTENCY_CORE_PROPERTIES
+        if review_based_scores[property_key]["supportCount"] > 0
+    ]
+
+    google_rating_normalized = round(overall_rating / 5, 4)
+    supporting_property_count = len(supported_scores)
+
+    if supporting_property_count == 0:
+        return {
+            "consistency": {
+                "googleRatingNormalized": google_rating_normalized,
+                "reviewCompositeScoreNormalized": None,
+                "mismatchScore": None,
+                "consistencyScore": None,
+                "evidenceLabel": "weak",
+                "supportingPropertyCount": 0,
+                "insufficientEvidence": True,
+            }
+        }
+
+    review_composite_score_normalized = round(
+        sum(supported_scores) / supporting_property_count, 4
+    )
+    mismatch_score = round(
+        abs(google_rating_normalized - review_composite_score_normalized), 4
+    )
+    consistency_score = round(1 - mismatch_score, 4)
+
+    return {
+        "consistency": {
+            "googleRatingNormalized": google_rating_normalized,
+            "reviewCompositeScoreNormalized": review_composite_score_normalized,
+            "mismatchScore": mismatch_score,
+            "consistencyScore": consistency_score,
+            "evidenceLabel": get_consistency_evidence_label(mismatch_score),
+            "supportingPropertyCount": supporting_property_count,
+            "insufficientEvidence": False,
         }
     }
 
