@@ -12,25 +12,39 @@
       },
       "propertySignals": {
         "serviceQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.2,
+          "score": 20,
+          "matchedKeywords": [
+            "warm hospitality",
+            "left standing",
+            "proper apology"
+          ],
+          "polarity": "negative"
         },
         "staffFriendliness": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "friendliness",
+            "kind",
+            "thoughtful care",
+            "professionally",
+            "unaware",
+            "mistakenly seated"
+          ],
+          "polarity": "positive"
         },
         "foodQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "excellent quality",
+            "ramadan buffet"
+          ],
+          "polarity": "positive"
         },
         "valueForMoney": {
           "mentioned": false,
@@ -54,18 +68,24 @@
           "polarity": null
         },
         "speed": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.2,
+          "score": 20,
+          "matchedKeywords": [
+            "for quite some time",
+            "left standing"
+          ],
+          "polarity": "negative"
         },
         "ambience": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "mesmerizing",
+            "unforgettable experience"
+          ],
+          "polarity": "positive"
         },
         "groupSuitability": {
           "mentioned": false,
@@ -82,18 +102,28 @@
           "polarity": null
         },
         "repeatVisitIntent": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "look forward to returning soon",
+            "returning soon",
+            "recommend this hotel to anyone",
+            "highly recommend"
+          ],
+          "polarity": "positive"
         },
         "viewQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "bosphorus view",
+            "view room",
+            "spectacular",
+            "scenery was simply spectacular"
+          ],
+          "polarity": "positive"
         },
         "luxuryPerception": {
           "mentioned": false,
@@ -120,25 +150,31 @@
       },
       "propertySignals": {
         "serviceQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "service has been incredible"
+          ],
+          "polarity": "positive"
         },
         "staffFriendliness": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "welcoming"
+          ],
+          "polarity": "positive"
         },
         "foodQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "food and drinks"
+          ],
+          "polarity": "positive"
         },
         "valueForMoney": {
           "mentioned": false,
@@ -169,11 +205,13 @@
           "polarity": null
         },
         "ambience": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "beautiful"
+          ],
+          "polarity": "positive"
         },
         "groupSuitability": {
           "mentioned": false,
@@ -232,23 +270,34 @@
           "sentiment": 0.85,
           "score": 85,
           "matchedKeywords": [
-            "attentive service"
+            "attentive service",
+            "five-star service",
+            "gold standard of service",
+            "exceptional hospitality"
           ],
           "polarity": "positive"
         },
         "staffFriendliness": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "kind",
+            "friendly conversation",
+            "treated like family",
+            "warmly introduced"
+          ],
+          "polarity": "positive"
         },
         "foodQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "outstanding meals",
+            "breakfast memorable"
+          ],
+          "polarity": "positive"
         },
         "valueForMoney": {
           "mentioned": false,
@@ -279,11 +328,13 @@
           "polarity": null
         },
         "ambience": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "breathtaking"
+          ],
+          "polarity": "positive"
         },
         "groupSuitability": {
           "mentioned": false,
@@ -300,6 +351,128 @@
             "romantic"
           ],
           "polarity": "positive"
+        },
+        "repeatVisitIntent": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "recommend this hotel to anyone",
+            "strongly recommend"
+          ],
+          "polarity": "positive"
+        },
+        "viewQuality": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "breathtaking view",
+            "downtown istanbul"
+          ],
+          "polarity": "positive"
+        },
+        "luxuryPerception": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "reservationEase": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        }
+      }
+    },
+    {
+      "reviewId": "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT05XWjVTRXBIVERacWJqbExWREkyWkVJME5sRRAB",
+      "text": "Emirhan was helping us and kindly serving us. He truly is always around at the breakfast & lunch area. He even brought me a fruit platter with all the seasonal fruits & i loved it. Overall, Food 10/10, atmosphere 10/10 and Emirhan 10/10 for sure!!!\n\nI stayed in room 711 and oh my god the room was always clean, i mean always. I’d go have my breakfast at 9 am and when i come back at 10-10:30 am, i’d find this amazing house keeping Fehmiye organising it and cleaning it. I mean i keep important things in there and not once did i not trust this amazing lady Fehmiye. She’s so sweet, so clean and the rooms always smell great & amazing thanks to this beautiful soul in & out Fehmiye.",
+      "qualityCheck": {
+        "isUsable": true,
+        "reason": "accepted"
+      },
+      "propertySignals": {
+        "serviceQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "staffFriendliness": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "kind"
+          ],
+          "polarity": "positive"
+        },
+        "foodQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "valueForMoney": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "portionSatisfaction": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "cleanliness": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "clean"
+          ],
+          "polarity": "positive"
+        },
+        "speed": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "always around"
+          ],
+          "polarity": "positive"
+        },
+        "ambience": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "beautiful"
+          ],
+          "polarity": "positive"
+        },
+        "groupSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "dateSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "repeatVisitIntent": {
           "mentioned": false,
@@ -334,116 +507,6 @@
     {
       "reviewId": "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21sWE5WRkhVM05RUkdwa2JGbExWVFJLVmsxa1lVRRAB",
       "text": "I sincerely adored my stay and was genuinely disappointed to leave so soon. I truly wished I could have stayed longer. The room was impeccable, the cleanliness outstanding, and the service consistently excellent despite the hotel being fully packed and hosting VIP events. Even the marketing team, Zeineb and Ipek, embody a rare and exceptional attitude: “no problem we can’t solve, and we’ll go to any length to make you happy.” This is the true ethos of hospitality and exactly why guests choose one hotel over another, even within the same brand and group.\n\nTheir generosity shines through in every detail. The lady concierge managed to find things even ChatGPT couldn’t track down, which speaks volumes about her resourcefulness. As for the wonderful hostess manager, Lauretta, she makes you feel instantly at home, as if you were an old friend stopping by for a visit.\n\nAll of this reflects the strength of the general manager Utkan Gulacti leading the property.\n\nIn my opinion, a hotel represents not only its brand but also the team that brings it to life, and here, the entire team feels like a group of true stars. They deserve sincere applause. I wholeheartedly commend them for their attention to details, their quick response despite being extremely busy,  please keep  up the good work, and honestly, my next stay can only be in this hotel. They made leaving incredibly difficult and left me wishing I had spent my entire time there. I hope to see them soon.",
-      "qualityCheck": {
-        "isUsable": true,
-        "reason": "accepted"
-      },
-      "propertySignals": {
-        "serviceQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "staffFriendliness": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "foodQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "valueForMoney": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "portionSatisfaction": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "cleanliness": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "clean"
-          ],
-          "polarity": "positive"
-        },
-        "speed": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "ambience": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "groupSuitability": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "dateSuitability": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "repeatVisitIntent": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "viewQuality": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "luxuryPerception": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "reservationEase": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        }
-      }
-    },
-    {
-      "reviewId": "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT05XWjVTRXBIVERacWJqbExWREkyWkVJME5sRRAB",
-      "text": "Emirhan was helping us and kindly serving us. He truly is always around at the breakfast & lunch area. He even brought me a fruit platter with all the seasonal fruits & i loved it. Overall, Food 10/10, atmosphere 10/10 and Emirhan 10/10 for sure!!!\n\nI stayed in room 711 and oh my god the room was always clean, i mean always. I’d go have my breakfast at 9 am and when i come back at 10-10:30 am, i’d find this amazing house keeping Fehmiye organising it and cleaning it. I mean i keep important things in there and not once did i not trust this amazing lady Fehmiye. She’s so sweet, so clean and the rooms always smell great & amazing thanks to this beautiful soul in & out Fehmiye.",
       "qualityCheck": {
         "isUsable": true,
         "reason": "accepted"

@@ -8,46 +8,76 @@
     "reviewsRejected": 0,
     "lastReviewPublishTime": "2026-03-09T07:05:20.693380904Z",
     "analysisVersion": "baseline-keyword-v2-quality-filter",
-    "analyzedAt": "2026-04-06T20:15:27.746792+00:00"
+    "analyzedAt": "2026-04-07T08:56:22.364273+00:00"
   },
   "reviewBasedScores": {
     "serviceQuality": {
-      "score": 85.0,
-      "confidence": 0.6,
-      "supportCount": 1,
-      "evidenceLabel": "weak",
+      "score": 63.33,
+      "confidence": 0.8,
+      "supportCount": 3,
+      "evidenceLabel": "strong",
       "evidence": {
         "topMatchedKeywords": [
-          "attentive service"
+          "warm hospitality",
+          "left standing",
+          "proper apology"
         ],
         "supportingReviewIds": [
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
           "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
         ],
         "supportingReviewSnippets": [
+          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
+          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
           "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
         ]
       }
     },
     "staffFriendliness": {
-      "score": 0.0,
-      "confidence": 0.0,
-      "supportCount": 0,
-      "evidenceLabel": "weak",
+      "score": 85.0,
+      "confidence": 0.9,
+      "supportCount": 4,
+      "evidenceLabel": "strong",
       "evidence": {
-        "topMatchedKeywords": [],
-        "supportingReviewIds": [],
-        "supportingReviewSnippets": []
+        "topMatchedKeywords": [
+          "kind",
+          "friendliness",
+          "thoughtful care"
+        ],
+        "supportingReviewIds": [
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
+        ],
+        "supportingReviewSnippets": [
+          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
+          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
+          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
+        ]
       }
     },
     "foodQuality": {
-      "score": 0.0,
-      "confidence": 0.0,
-      "supportCount": 0,
-      "evidenceLabel": "weak",
+      "score": 85.0,
+      "confidence": 0.8,
+      "supportCount": 3,
+      "evidenceLabel": "strong",
       "evidence": {
-        "topMatchedKeywords": [],
-        "supportingReviewIds": [],
-        "supportingReviewSnippets": []
+        "topMatchedKeywords": [
+          "excellent quality",
+          "ramadan buffet",
+          "food and drinks"
+        ],
+        "supportingReviewIds": [
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
+        ],
+        "supportingReviewSnippets": [
+          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
+          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
+          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
+        ]
       }
     },
     "valueForMoney": {
@@ -82,35 +112,57 @@
           "clean"
         ],
         "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21sWE5WRkhVM05RUkdwa2JGbExWVFJLVmsxa1lVRRAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT05XWjVTRXBIVERacWJqbExWREkyWkVJME5sRRAB"
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT05XWjVTRXBIVERacWJqbExWREkyWkVJME5sRRAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21sWE5WRkhVM05RUkdwa2JGbExWVFJLVmsxa1lVRRAB"
         ],
         "supportingReviewSnippets": [
-          "I sincerely adored my stay and was genuinely disappointed to leave so soon. I truly wished I could have stayed longer...",
-          "Emirhan was helping us and kindly serving us. He truly is always around at the breakfast & lunch area. He even brough..."
+          "Emirhan was helping us and kindly serving us. He truly is always around at the breakfast & lunch area. He even brough...",
+          "I sincerely adored my stay and was genuinely disappointed to leave so soon. I truly wished I could have stayed longer..."
         ]
       }
     },
     "speed": {
-      "score": 0.0,
-      "confidence": 0.0,
-      "supportCount": 0,
-      "evidenceLabel": "weak",
+      "score": 52.5,
+      "confidence": 0.7,
+      "supportCount": 2,
+      "evidenceLabel": "moderate",
       "evidence": {
-        "topMatchedKeywords": [],
-        "supportingReviewIds": [],
-        "supportingReviewSnippets": []
+        "topMatchedKeywords": [
+          "for quite some time",
+          "left standing",
+          "always around"
+        ],
+        "supportingReviewIds": [
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT05XWjVTRXBIVERacWJqbExWREkyWkVJME5sRRAB"
+        ],
+        "supportingReviewSnippets": [
+          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
+          "Emirhan was helping us and kindly serving us. He truly is always around at the breakfast & lunch area. He even brough..."
+        ]
       }
     },
     "ambience": {
-      "score": 0.0,
-      "confidence": 0.0,
-      "supportCount": 0,
-      "evidenceLabel": "weak",
+      "score": 85.0,
+      "confidence": 0.9,
+      "supportCount": 4,
+      "evidenceLabel": "strong",
       "evidence": {
-        "topMatchedKeywords": [],
-        "supportingReviewIds": [],
-        "supportingReviewSnippets": []
+        "topMatchedKeywords": [
+          "beautiful",
+          "mesmerizing",
+          "unforgettable experience"
+        ],
+        "supportingReviewIds": [
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
+        ],
+        "supportingReviewSnippets": [
+          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
+          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
+          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
+        ]
       }
     },
     "groupSuitability": {
@@ -142,25 +194,45 @@
       }
     },
     "repeatVisitIntent": {
-      "score": 0.0,
-      "confidence": 0.0,
-      "supportCount": 0,
-      "evidenceLabel": "weak",
+      "score": 85.0,
+      "confidence": 0.7,
+      "supportCount": 2,
+      "evidenceLabel": "moderate",
       "evidence": {
-        "topMatchedKeywords": [],
-        "supportingReviewIds": [],
-        "supportingReviewSnippets": []
+        "topMatchedKeywords": [
+          "recommend this hotel to anyone",
+          "look forward to returning soon",
+          "returning soon"
+        ],
+        "supportingReviewIds": [
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
+        ],
+        "supportingReviewSnippets": [
+          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
+          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
+        ]
       }
     },
     "viewQuality": {
-      "score": 0.0,
-      "confidence": 0.0,
-      "supportCount": 0,
-      "evidenceLabel": "weak",
+      "score": 85.0,
+      "confidence": 0.7,
+      "supportCount": 2,
+      "evidenceLabel": "moderate",
       "evidence": {
-        "topMatchedKeywords": [],
-        "supportingReviewIds": [],
-        "supportingReviewSnippets": []
+        "topMatchedKeywords": [
+          "bosphorus view",
+          "view room",
+          "spectacular"
+        ],
+        "supportingReviewIds": [
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
+        ],
+        "supportingReviewSnippets": [
+          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
+          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
+        ]
       }
     },
     "luxuryPerception": {
@@ -189,26 +261,32 @@
   "metaMetrics": {
     "consistency": {
       "googleRatingNormalized": 0.96,
-      "reviewCompositeScoreNormalized": 0.85,
-      "mismatchScore": 0.11,
-      "consistencyScore": 0.89,
+      "reviewCompositeScoreNormalized": 0.7597,
+      "mismatchScore": 0.2003,
+      "consistencyScore": 0.7997,
       "evidenceLabel": "moderate",
-      "supportingPropertyCount": 2,
+      "supportingPropertyCount": 6,
       "insufficientEvidence": false
     }
   },
   "topReviewTags": [
-    "clean",
-    "attentive service",
-    "romantic"
+    "kind",
+    "left standing",
+    "recommend this hotel to anyone",
+    "beautiful",
+    "clean"
   ],
   "summary": {
     "strengths": [
-      "Service Quality",
+      "Staff Friendliness",
+      "Food Quality",
       "Cleanliness",
-      "Date Suitability"
+      "Ambience",
+      "Date Suitability",
+      "Repeat Visit Intent",
+      "View Quality"
     ],
     "weaknesses": [],
-    "oneParagraphSummary": "Review analysis suggests that this restaurant stands out mainly through the following aspects. Strongest signals are Service Quality, Cleanliness, Date Suitability. No major weaknesses were detected from the current reviews."
+    "oneParagraphSummary": "Review analysis suggests that this restaurant stands out mainly through the following aspects. Strongest signals are Staff Friendliness, Food Quality, Cleanliness, Ambience, Date Suitability, Repeat Visit Intent, View Quality. No major weaknesses were detected from the current reviews."
   }
 }

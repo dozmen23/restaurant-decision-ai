@@ -20,12 +20,22 @@ from src.property_manifest import build_property_manifest
 from src.review_quality import filter_usable_reviews
 
 
+def select_latest_reviews(usable_reviews: list[dict], limit: int = 20) -> list[dict]:
+    sorted_usable_reviews = sorted(
+        usable_reviews,
+        key=lambda review: review["publishTime"],
+        reverse=True,
+    )
+    return sorted_usable_reviews[:limit]
+
+
 def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[DetailedAnalysisOutput, RestaurantScoresOutput, dict]:
     review_dicts = [review.model_dump() for review in restaurant_data.reviews]
     usable_reviews, rejected_reviews = filter_usable_reviews(review_dicts)
+    selected_reviews = select_latest_reviews(usable_reviews)
 
-    detailed_results = analyze_reviews_detailed(usable_reviews)
-    aggregated_bundle = aggregate_reviews(usable_reviews)
+    detailed_results = analyze_reviews_detailed(selected_reviews)
+    aggregated_bundle = aggregate_reviews(selected_reviews)
     meta_metrics = build_meta_metrics(
         aggregated_bundle["reviewBasedScores"],
         restaurant_data.overallRating,
@@ -55,7 +65,7 @@ def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[Detailed
         overallRating=restaurant_data.overallRating,
         reviewSnapshot=ReviewSnapshot(
             totalReviewsFetched=len(restaurant_data.reviews),
-            reviewsProcessed=len(usable_reviews),
+            reviewsProcessed=len(selected_reviews),
             reviewsRejected=len(rejected_reviews),
             lastReviewPublishTime=last_review_time,
             analysisVersion="baseline-keyword-v2-quality-filter",
@@ -70,6 +80,7 @@ def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[Detailed
     run_context = {
         "adaptedReviewCount": len(restaurant_data.reviews),
         "usableReviewCount": len(usable_reviews),
+        "selectedReviewCount": len(selected_reviews),
     }
 
     return detailed_payload, scores_payload, run_context
