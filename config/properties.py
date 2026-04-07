@@ -39,6 +39,8 @@ PROPERTY_DEFINITIONS = {
             "poor service",
             "awful service",
             "unprofessional service",
+            "unaware",
+            "mistakenly seated",
             "left standing",
             "no apology",
             "proper apology",
@@ -69,8 +71,6 @@ PROPERTY_DEFINITIONS = {
             "cold staff",
             "impolite staff",
             "dismissive staff",
-            "unaware",
-            "mistakenly seated",
         ],
     },
     "foodQuality": {

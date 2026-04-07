@@ -8,19 +8,19 @@
     "reviewsRejected": 0,
     "lastReviewPublishTime": "2026-03-09T07:05:20.693380904Z",
     "analysisVersion": "baseline-keyword-v2-quality-filter",
-    "analyzedAt": "2026-04-07T08:56:22.364273+00:00"
+    "analyzedAt": "2026-04-07T14:44:55.061004+00:00"
   },
   "reviewBasedScores": {
     "serviceQuality": {
-      "score": 63.33,
+      "score": 73.33,
       "confidence": 0.8,
       "supportCount": 3,
       "evidenceLabel": "strong",
       "evidence": {
         "topMatchedKeywords": [
           "warm hospitality",
-          "left standing",
-          "proper apology"
+          "unaware",
+          "mistakenly seated"
         ],
         "supportingReviewIds": [
           "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
@@ -261,9 +261,9 @@
   "metaMetrics": {
     "consistency": {
       "googleRatingNormalized": 0.96,
-      "reviewCompositeScoreNormalized": 0.7597,
-      "mismatchScore": 0.2003,
-      "consistencyScore": 0.7997,
+      "reviewCompositeScoreNormalized": 0.7764,
+      "mismatchScore": 0.1836,
+      "consistencyScore": 0.8164,
       "evidenceLabel": "moderate",
       "supportingPropertyCount": 6,
       "insufficientEvidence": false

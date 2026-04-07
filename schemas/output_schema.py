@@ -15,7 +15,7 @@ class PropertySignal(BaseModel):
     sentiment: Optional[float] = None
     score: Optional[int] = None
     matchedKeywords: list[str]
-    polarity: Optional[Literal["positive", "negative", "neutral"]] = None
+    polarity: Optional[Literal["positive", "negative", "mixed", "neutral"]] = None
 
 
 class DetailedReviewAnalysisItem(BaseModel):

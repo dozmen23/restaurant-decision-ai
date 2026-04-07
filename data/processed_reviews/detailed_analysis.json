@@ -13,14 +13,16 @@
       "propertySignals": {
         "serviceQuality": {
           "mentioned": true,
-          "sentiment": 0.2,
-          "score": 20,
+          "sentiment": 0.5,
+          "score": 50,
           "matchedKeywords": [
             "warm hospitality",
+            "unaware",
+            "mistakenly seated",
             "left standing",
             "proper apology"
           ],
-          "polarity": "negative"
+          "polarity": "mixed"
         },
         "staffFriendliness": {
           "mentioned": true,
@@ -30,9 +32,7 @@
             "friendliness",
             "kind",
             "thoughtful care",
-            "professionally",
-            "unaware",
-            "mistakenly seated"
+            "professionally"
           ],
           "polarity": "positive"
         },

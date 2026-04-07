@@ -67,14 +67,15 @@ def analyze_review(text: str) -> dict:
             }
             continue
 
-        raw_score = pos_hits - neg_hits
-
-        if raw_score > 0:
+        if pos_hits > 0 and neg_hits == 0:
             sentiment = 0.85
             polarity = "positive"
-        elif raw_score < 0:
+        elif neg_hits > 0 and pos_hits == 0:
             sentiment = 0.20
             polarity = "negative"
+        elif pos_hits > 0 and neg_hits > 0:
+            sentiment = 0.50
+            polarity = "mixed"
         else:
             sentiment = 0.50
             polarity = "neutral"
