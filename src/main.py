@@ -11,13 +11,16 @@ from schemas.output_schema import (
     SummaryBlock,
 )
 from src.baseline_extractor import (
-    analyze_reviews_detailed,
-    aggregate_reviews,
+    analyze_review,
+    aggregate_review_analyses,
+    build_detailed_results,
     build_meta_metrics,
 )
 from src.adapters.google_places_adapter import adapt_places_payload
+from src.llm_extractor import run_llm_extraction_for_review
 from src.property_manifest import build_property_manifest
 from src.review_quality import filter_usable_reviews
+from src.review_fusion import fuse_review_signals
 
 
 def select_latest_reviews(usable_reviews: list[dict], limit: int = 20) -> list[dict]:
@@ -40,8 +43,29 @@ def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[Detailed
     usable_reviews, rejected_reviews = filter_usable_reviews(review_dicts)
     selected_reviews = select_latest_reviews(usable_reviews)
 
-    detailed_results = analyze_reviews_detailed(selected_reviews)
-    aggregated_bundle = aggregate_reviews(selected_reviews)
+    fused_review_analyses = []
+
+    for review in selected_reviews:
+        baseline_signals = analyze_review(review["text"])
+
+        try:
+            llm_output = run_llm_extraction_for_review(
+                review["reviewId"],
+                review["text"],
+            )
+            property_signals = fuse_review_signals(baseline_signals, llm_output)
+        except Exception:
+            property_signals = baseline_signals
+
+        fused_review_analyses.append({
+            "reviewId": review["reviewId"],
+            "text": review["text"],
+            "qualityCheck": review["qualityCheck"],
+            "propertySignals": property_signals,
+        })
+
+    detailed_results = build_detailed_results(fused_review_analyses)
+    aggregated_bundle = aggregate_review_analyses(fused_review_analyses)
     meta_metrics = build_meta_metrics(
         aggregated_bundle["reviewBasedScores"],
         restaurant_data.overallRating,
@@ -76,7 +100,7 @@ def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[Detailed
             reviewsSelected=len(selected_reviews),
             reviewsRejected=len(rejected_reviews),
             lastReviewPublishTime=last_review_time,
-            analysisVersion="baseline-keyword-v2-quality-filter",
+            analysisVersion="hybrid-baseline-llm-v1",
             analyzedAt=datetime.now(timezone.utc).isoformat()
         ),
         reviewBasedScores=aggregated_bundle["reviewBasedScores"],

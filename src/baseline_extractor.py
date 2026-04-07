@@ -92,35 +92,55 @@ def analyze_review(text: str) -> dict:
 
 
 def analyze_reviews_detailed(usable_reviews: list[dict]) -> list[dict]:
-    detailed_results = []
-
-    for review in usable_reviews:
-        analysis = analyze_review(review["text"])
-        detailed_results.append({
+    review_analyses = [
+        {
             "reviewId": review["reviewId"],
             "text": review["text"],
             "qualityCheck": review["qualityCheck"],
-            "propertySignals": analysis
-        })
+            "propertySignals": analyze_review(review["text"]),
+        }
+        for review in usable_reviews
+    ]
+    return build_detailed_results(review_analyses)
 
-    return detailed_results
+
+def build_detailed_results(review_analyses: list[dict]) -> list[dict]:
+    return [
+        {
+            "reviewId": review_analysis["reviewId"],
+            "text": review_analysis["text"],
+            "qualityCheck": review_analysis["qualityCheck"],
+            "propertySignals": review_analysis["propertySignals"],
+        }
+        for review_analysis in review_analyses
+    ]
 
 
 def aggregate_reviews(usable_reviews: list[dict]) -> dict:
+    review_analyses = [
+        {
+            "reviewId": review["reviewId"],
+            "text": review["text"],
+            "propertySignals": analyze_review(review["text"]),
+        }
+        for review in usable_reviews
+    ]
+    return aggregate_review_analyses(review_analyses)
+
+
+def aggregate_review_analyses(review_analyses: list[dict]) -> dict:
     property_scores = defaultdict(list)
     property_keywords = defaultdict(Counter)
     property_review_ids = defaultdict(list)
     property_review_snippets = defaultdict(list)
     global_keyword_counter = Counter()
 
-    for review in usable_reviews:
-        review_id = review["reviewId"]
-        review_text = review["text"]
+    for review_analysis in review_analyses:
+        review_id = review_analysis["reviewId"]
+        review_text = review_analysis["text"]
         review_snippet = make_snippet(review_text)
 
-        analysis = analyze_review(review_text)
-
-        for prop, result in analysis.items():
+        for prop, result in review_analysis["propertySignals"].items():
             if result["mentioned"] and result["sentiment"] is not None:
                 property_scores[prop].append(result["sentiment"])
                 property_review_ids[prop].append(review_id)

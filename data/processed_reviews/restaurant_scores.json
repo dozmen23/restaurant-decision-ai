@@ -9,8 +9,8 @@
     "reviewsSelected": 5,
     "reviewsRejected": 0,
     "lastReviewPublishTime": "2026-03-09T07:05:20.693380904Z",
-    "analysisVersion": "baseline-keyword-v2-quality-filter",
-    "analyzedAt": "2026-04-07T15:01:21.965151+00:00"
+    "analysisVersion": "hybrid-baseline-llm-v1",
+    "analyzedAt": "2026-04-07T19:22:13.558011+00:00"
   },
   "reviewBasedScores": {
     "serviceQuality": {
