@@ -29,6 +29,12 @@ def select_latest_reviews(usable_reviews: list[dict], limit: int = 20) -> list[d
     return sorted_usable_reviews[:limit]
 
 
+def select_place_for_processing(adapted_places: list[dict]) -> dict:
+    if not adapted_places:
+        raise ValueError("Google Places payload did not produce any adapted places.")
+    return adapted_places[0]
+
+
 def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[DetailedAnalysisOutput, RestaurantScoresOutput, dict]:
     review_dicts = [review.model_dump() for review in restaurant_data.reviews]
     usable_reviews, rejected_reviews = filter_usable_reviews(review_dicts)
@@ -66,6 +72,8 @@ def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[Detailed
         reviewSnapshot=ReviewSnapshot(
             totalReviewsFetched=len(restaurant_data.reviews),
             reviewsProcessed=len(selected_reviews),
+            reviewsUsable=len(usable_reviews),
+            reviewsSelected=len(selected_reviews),
             reviewsRejected=len(rejected_reviews),
             lastReviewPublishTime=last_review_time,
             analysisVersion="baseline-keyword-v2-quality-filter",
@@ -100,9 +108,7 @@ def main():
             raw_payload = json.load(f)
 
         adapted_places = adapt_places_payload(raw_payload)
-        if not adapted_places:
-            raise ValueError("Google Places payload did not produce any adapted places.")
-        selected_place = adapted_places[0]
+        selected_place = select_place_for_processing(adapted_places)
         restaurant_data = RestaurantReviews(**selected_place)
         detailed_payload, scores_payload, run_context = build_pipeline_outputs(
             restaurant_data

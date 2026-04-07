@@ -5,10 +5,12 @@
   "reviewSnapshot": {
     "totalReviewsFetched": 5,
     "reviewsProcessed": 5,
+    "reviewsUsable": 5,
+    "reviewsSelected": 5,
     "reviewsRejected": 0,
     "lastReviewPublishTime": "2026-03-09T07:05:20.693380904Z",
     "analysisVersion": "baseline-keyword-v2-quality-filter",
-    "analyzedAt": "2026-04-07T14:44:55.061004+00:00"
+    "analyzedAt": "2026-04-07T14:51:44.803163+00:00"
   },
   "reviewBasedScores": {
     "serviceQuality": {
@@ -195,9 +197,9 @@
     },
     "repeatVisitIntent": {
       "score": 85.0,
-      "confidence": 0.7,
-      "supportCount": 2,
-      "evidenceLabel": "moderate",
+      "confidence": 0.9,
+      "supportCount": 4,
+      "evidenceLabel": "strong",
       "evidence": {
         "topMatchedKeywords": [
           "recommend this hotel to anyone",
@@ -206,10 +208,12 @@
         ],
         "supportingReviewIds": [
           "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
+          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
           "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
         ],
         "supportingReviewSnippets": [
           "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
+          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
           "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
         ]
       }

@@ -228,11 +228,14 @@
           "polarity": null
         },
         "repeatVisitIntent": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "100% recommend",
+            "recommend to anyone"
+          ],
+          "polarity": "positive"
         },
         "viewQuality": {
           "mentioned": false,
@@ -475,11 +478,13 @@
           "polarity": null
         },
         "repeatVisitIntent": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "come back"
+          ],
+          "polarity": "positive"
         },
         "viewQuality": {
           "mentioned": false,

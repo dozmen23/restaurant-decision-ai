@@ -48,6 +48,8 @@ class PropertyScore(BaseModel):
 class ReviewSnapshot(BaseModel):
     totalReviewsFetched: int
     reviewsProcessed: int
+    reviewsUsable: int
+    reviewsSelected: int
     reviewsRejected: int
     lastReviewPublishTime: Optional[str] = None
     analysisVersion: str
