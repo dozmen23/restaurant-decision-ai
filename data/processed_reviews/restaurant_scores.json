@@ -1,85 +1,58 @@
 {
-  "restaurantId": "ChIJm9zzJnW3yhQRHmF9bN2hrZI",
-  "restaurantName": "Swissôtel The Bosphorus Istanbul",
-  "overallRating": 4.8,
+  "restaurantId": "ChIJQ58j_vG3yhQRPWLdfZF6R1Q",
+  "restaurantName": "CVK Park Bosphorus Hotel Istanbul",
+  "overallRating": 4.5,
   "reviewSnapshot": {
     "totalReviewsFetched": 5,
     "reviewsProcessed": 5,
     "reviewsUsable": 5,
     "reviewsSelected": 5,
     "reviewsRejected": 0,
-    "lastReviewPublishTime": "2026-03-09T07:05:20.693380904Z",
+    "lastReviewPublishTime": "2026-03-05T08:21:21.399102774Z",
     "analysisVersion": "hybrid-baseline-llm-v1",
-    "analyzedAt": "2026-04-07T19:22:13.558011+00:00"
+    "analyzedAt": "2026-04-08T10:19:06.106472+00:00"
   },
   "reviewBasedScores": {
     "serviceQuality": {
-      "score": 73.33,
-      "confidence": 0.8,
-      "supportCount": 3,
-      "evidenceLabel": "strong",
+      "score": 0.0,
+      "confidence": 0.0,
+      "supportCount": 0,
+      "evidenceLabel": "weak",
       "evidence": {
-        "topMatchedKeywords": [
-          "warm hospitality",
-          "unaware",
-          "mistakenly seated"
-        ],
-        "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
-        ],
-        "supportingReviewSnippets": [
-          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
-          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
-          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
-        ]
+        "topMatchedKeywords": [],
+        "supportingReviewIds": [],
+        "supportingReviewSnippets": []
       }
     },
     "staffFriendliness": {
       "score": 85.0,
-      "confidence": 0.9,
-      "supportCount": 4,
-      "evidenceLabel": "strong",
+      "confidence": 0.7,
+      "supportCount": 2,
+      "evidenceLabel": "moderate",
       "evidence": {
         "topMatchedKeywords": [
-          "kind",
-          "friendliness",
-          "thoughtful care"
+          "welcoming",
+          "kind"
         ],
         "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
+          "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wc1dWbExhV1EyZURWTk1GOUpXSEpEZW1SUloxRRAB",
+          "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT21wb05sWjZSa2h3WDJnMmVuaHlhV3hCVWpSRWVuYxAB"
         ],
         "supportingReviewSnippets": [
-          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
-          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
-          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
+          "We had an absolutely wonderful 5 day stay at the CVK earlier this month. This was our second time there, the hotel is...",
+          "CVK was my last stop, and it was the perfect way to end the journey.\nA truly beautiful hotel—spacious, luxurious, and..."
         ]
       }
     },
     "foodQuality": {
-      "score": 85.0,
-      "confidence": 0.8,
-      "supportCount": 3,
-      "evidenceLabel": "strong",
+      "score": 0.0,
+      "confidence": 0.0,
+      "supportCount": 0,
+      "evidenceLabel": "weak",
       "evidence": {
-        "topMatchedKeywords": [
-          "excellent quality",
-          "ramadan buffet",
-          "food and drinks"
-        ],
-        "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
-        ],
-        "supportingReviewSnippets": [
-          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
-          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
-          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
-        ]
+        "topMatchedKeywords": [],
+        "supportingReviewIds": [],
+        "supportingReviewSnippets": []
       }
     },
     "valueForMoney": {
@@ -105,43 +78,25 @@
       }
     },
     "cleanliness": {
-      "score": 85.0,
-      "confidence": 0.7,
-      "supportCount": 2,
-      "evidenceLabel": "moderate",
+      "score": 0.0,
+      "confidence": 0.0,
+      "supportCount": 0,
+      "evidenceLabel": "weak",
       "evidence": {
-        "topMatchedKeywords": [
-          "clean"
-        ],
-        "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT05XWjVTRXBIVERacWJqbExWREkyWkVJME5sRRAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21sWE5WRkhVM05RUkdwa2JGbExWVFJLVmsxa1lVRRAB"
-        ],
-        "supportingReviewSnippets": [
-          "Emirhan was helping us and kindly serving us. He truly is always around at the breakfast & lunch area. He even brough...",
-          "I sincerely adored my stay and was genuinely disappointed to leave so soon. I truly wished I could have stayed longer..."
-        ]
+        "topMatchedKeywords": [],
+        "supportingReviewIds": [],
+        "supportingReviewSnippets": []
       }
     },
     "speed": {
-      "score": 52.5,
-      "confidence": 0.7,
-      "supportCount": 2,
-      "evidenceLabel": "moderate",
+      "score": 0.0,
+      "confidence": 0.0,
+      "supportCount": 0,
+      "evidenceLabel": "weak",
       "evidence": {
-        "topMatchedKeywords": [
-          "for quite some time",
-          "left standing",
-          "always around"
-        ],
-        "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT05XWjVTRXBIVERacWJqbExWREkyWkVJME5sRRAB"
-        ],
-        "supportingReviewSnippets": [
-          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
-          "Emirhan was helping us and kindly serving us. He truly is always around at the breakfast & lunch area. He even brough..."
-        ]
+        "topMatchedKeywords": [],
+        "supportingReviewIds": [],
+        "supportingReviewSnippets": []
       }
     },
     "ambience": {
@@ -151,19 +106,17 @@
       "evidenceLabel": "strong",
       "evidence": {
         "topMatchedKeywords": [
-          "beautiful",
-          "mesmerizing",
-          "unforgettable experience"
+          "beautiful"
         ],
         "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
+          "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kS1NtMXFPRkpmU0hsNFZuTndURkpFYWtoZlJrRRAB",
+          "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT21wb05sWjZSa2h3WDJnMmVuaHlhV3hCVWpSRWVuYxAB",
+          "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pndFNqVlFkbVZSWjFkTFdXYzJSbWwyZEd4MGFIYxAB"
         ],
         "supportingReviewSnippets": [
-          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
-          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
-          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
+          "Next to Taksim located in a quiet side street. Perfect location for exploring.\nMy room locked out to the beautiful Bo...",
+          "CVK was my last stop, and it was the perfect way to end the journey.\nA truly beautiful hotel—spacious, luxurious, and...",
+          "Amazing hotel with great location.\nFeeling warm and like in a cocoon as soon as you enter from busy Taksim.\nThe gym c..."
         ]
       }
     },
@@ -179,67 +132,6 @@
       }
     },
     "dateSuitability": {
-      "score": 85.0,
-      "confidence": 0.6,
-      "supportCount": 1,
-      "evidenceLabel": "weak",
-      "evidence": {
-        "topMatchedKeywords": [
-          "romantic"
-        ],
-        "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
-        ],
-        "supportingReviewSnippets": [
-          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
-        ]
-      }
-    },
-    "repeatVisitIntent": {
-      "score": 85.0,
-      "confidence": 0.9,
-      "supportCount": 4,
-      "evidenceLabel": "strong",
-      "evidence": {
-        "topMatchedKeywords": [
-          "recommend this hotel to anyone",
-          "look forward to returning soon",
-          "returning soon"
-        ],
-        "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
-        ],
-        "supportingReviewSnippets": [
-          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
-          "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has ...",
-          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
-        ]
-      }
-    },
-    "viewQuality": {
-      "score": 85.0,
-      "confidence": 0.7,
-      "supportCount": 2,
-      "evidenceLabel": "moderate",
-      "evidence": {
-        "topMatchedKeywords": [
-          "bosphorus view",
-          "view room",
-          "spectacular"
-        ],
-        "supportingReviewIds": [
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
-          "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB"
-        ],
-        "supportingReviewSnippets": [
-          "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentl...",
-          "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we..."
-        ]
-      }
-    },
-    "luxuryPerception": {
       "score": 0.0,
       "confidence": 0.0,
       "supportCount": 0,
@@ -248,6 +140,48 @@
         "topMatchedKeywords": [],
         "supportingReviewIds": [],
         "supportingReviewSnippets": []
+      }
+    },
+    "repeatVisitIntent": {
+      "score": 0.0,
+      "confidence": 0.0,
+      "supportCount": 0,
+      "evidenceLabel": "weak",
+      "evidence": {
+        "topMatchedKeywords": [],
+        "supportingReviewIds": [],
+        "supportingReviewSnippets": []
+      }
+    },
+    "viewQuality": {
+      "score": 0.0,
+      "confidence": 0.0,
+      "supportCount": 0,
+      "evidenceLabel": "weak",
+      "evidence": {
+        "topMatchedKeywords": [],
+        "supportingReviewIds": [],
+        "supportingReviewSnippets": []
+      }
+    },
+    "luxuryPerception": {
+      "score": 85.0,
+      "confidence": 0.7,
+      "supportCount": 2,
+      "evidenceLabel": "moderate",
+      "evidence": {
+        "topMatchedKeywords": [
+          "elegant",
+          "luxurious"
+        ],
+        "supportingReviewIds": [
+          "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT21wb05sWjZSa2h3WDJnMmVuaHlhV3hCVWpSRWVuYxAB",
+          "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOclV6TndZMWhrYld4WmMxbERPR290VURsb04wRRAB"
+        ],
+        "supportingReviewSnippets": [
+          "CVK was my last stop, and it was the perfect way to end the journey.\nA truly beautiful hotel—spacious, luxurious, and...",
+          "From the moment we arrived, the experience at CVK Bosphorus was outstanding. The welcome from the entrance through to..."
+        ]
       }
     },
     "reservationEase": {
@@ -264,33 +198,29 @@
   },
   "metaMetrics": {
     "consistency": {
-      "googleRatingNormalized": 0.96,
-      "reviewCompositeScoreNormalized": 0.7764,
-      "mismatchScore": 0.1836,
-      "consistencyScore": 0.8164,
-      "evidenceLabel": "moderate",
-      "supportingPropertyCount": 6,
+      "googleRatingNormalized": 0.9,
+      "reviewCompositeScoreNormalized": 0.85,
+      "mismatchScore": 0.05,
+      "consistencyScore": 0.95,
+      "evidenceLabel": "strong",
+      "supportingPropertyCount": 2,
       "insufficientEvidence": false
     }
   },
   "topReviewTags": [
-    "kind",
-    "left standing",
-    "recommend this hotel to anyone",
     "beautiful",
-    "clean"
+    "elegant",
+    "welcoming",
+    "kind",
+    "luxurious"
   ],
   "summary": {
     "strengths": [
       "Staff Friendliness",
-      "Food Quality",
-      "Cleanliness",
       "Ambience",
-      "Date Suitability",
-      "Repeat Visit Intent",
-      "View Quality"
+      "Luxury Perception"
     ],
     "weaknesses": [],
-    "oneParagraphSummary": "Review analysis suggests that this restaurant stands out mainly through the following aspects. Strongest signals are Staff Friendliness, Food Quality, Cleanliness, Ambience, Date Suitability, Repeat Visit Intent, View Quality. No major weaknesses were detected from the current reviews."
+    "oneParagraphSummary": "Review analysis suggests that this restaurant stands out mainly through the following aspects. Strongest signals are Staff Friendliness, Ambience, Luxury Perception. No major weaknesses were detected from the current reviews."
   }
 }

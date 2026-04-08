@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -35,7 +36,14 @@ def select_latest_reviews(usable_reviews: list[dict], limit: int = 20) -> list[d
 def select_place_for_processing(adapted_places: list[dict]) -> dict:
     if not adapted_places:
         raise ValueError("Google Places payload did not produce any adapted places.")
-    return adapted_places[0]
+
+    place_index = int(os.getenv("PLACE_INDEX", "0"))
+    if place_index < 0 or place_index >= len(adapted_places):
+        raise ValueError(
+            f"PLACE_INDEX {place_index} is out of range for {len(adapted_places)} adapted places."
+        )
+
+    return adapted_places[place_index]
 
 
 def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[DetailedAnalysisOutput, RestaurantScoresOutput, dict]:
@@ -110,9 +118,11 @@ def build_pipeline_outputs(restaurant_data: RestaurantReviews) -> tuple[Detailed
     )
 
     run_context = {
+        "totalReviewCount": len(restaurant_data.reviews),
         "adaptedReviewCount": len(restaurant_data.reviews),
         "usableReviewCount": len(usable_reviews),
         "selectedReviewCount": len(selected_reviews),
+        "rejectedReviewCount": len(rejected_reviews),
     }
 
     return detailed_payload, scores_payload, run_context
@@ -164,8 +174,11 @@ def main():
     print(f"Property manifest saved to: {manifest_output_path}")
     print(f"Loaded file: {input_path}")
     print(f"Selected place: {selected_place_name}")
+    print(f"Total reviews fetched: {run_context['totalReviewCount']}")
     print(f"Adapted reviews: {run_context['adaptedReviewCount']}")
     print(f"Usable reviews: {run_context['usableReviewCount']}")
+    print(f"Selected reviews used in analysis: {run_context['selectedReviewCount']}")
+    print(f"Rejected reviews: {run_context['rejectedReviewCount']}")
 
 
 if __name__ == "__main__":

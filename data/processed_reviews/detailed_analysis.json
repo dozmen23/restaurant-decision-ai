@@ -1,180 +1,36 @@
 {
-  "restaurantId": "ChIJm9zzJnW3yhQRHmF9bN2hrZI",
-  "restaurantName": "Swissôtel The Bosphorus Istanbul",
-  "overallRating": 4.8,
+  "restaurantId": "ChIJQ58j_vG3yhQRPWLdfZF6R1Q",
+  "restaurantName": "CVK Park Bosphorus Hotel Istanbul",
+  "overallRating": 4.5,
   "detailedReviewAnalysis": [
     {
-      "reviewId": "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KMmIzQndXa05YT1dRNFVWVjNOekJ2WlhWUk4yYxAB",
-      "text": "From the moment I stepped into the hotel, I was deeply moved by the warm hospitality. I especially remember the gentleman at the entrance who expressed his love for Korea and shared a wonderful conversation about Korean food. His friendliness made me feel right at home from the very beginning.\n\nAs an Accor Platinum member, I was incredibly grateful for the Bosphorus View room upgrade, and the scenery was simply spectacular. It was also a wonderful opportunity to experience the special Ramadan buffet curated by the hotel. The Half-Board (Breakfast & Dinner) meals were of excellent quality, and the traditional ritual dance during dinner was a mesmerizing and unforgettable experience.\n\nHowever, I must mention a disappointing incident during a busy weekend breakfast. We were assigned a table, but another guest was mistakenly seated there. The staff were unaware of the double-booking until I brought it to their attention, and even then, we were left standing with our food for quite some time without a proper apology. This was quite unexpected for a 5-star hotel of this caliber, especially considering how much I enjoyed the rest of the services.\n\nDespite this, the individual staff members truly make this hotel special. The Lounge staff were consistently kind and attentive throughout our stay. My sincere thanks to Chef Mehmet Efir for his thoughtful care every morning, and Zeynepnur at the reception, who assisted us so kindly and professionally during our checkout.\n\nSwissôtel The Bosphorus made my final days in Istanbul truly perfect. I highly recommend this hotel to anyone visiting the city and look forward to returning soon.",
+      "reviewId": "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kS1NtMXFPRkpmU0hsNFZuTndURkpFYWtoZlJrRRAB",
+      "text": "Next to Taksim located in a quiet side street. Perfect location for exploring.\nMy room locked out to the beautiful Bosporus river. The breakfast buffet is absolutely fabulous. Probably the best and biggest choice I have ever seen. Heaven for vegetarians, vegans, pastry lovers and meat eaters alike.",
       "qualityCheck": {
         "isUsable": true,
         "reason": "accepted"
       },
       "propertySignals": {
         "serviceQuality": {
-          "mentioned": true,
-          "sentiment": 0.5,
-          "score": 50,
-          "matchedKeywords": [
-            "warm hospitality",
-            "unaware",
-            "mistakenly seated",
-            "left standing",
-            "proper apology"
-          ],
-          "polarity": "mixed"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "staffFriendliness": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "friendliness",
-            "kind",
-            "thoughtful care",
-            "professionally"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "foodQuality": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "excellent quality",
-            "ramadan buffet"
-          ],
-          "polarity": "positive"
-        },
-        "valueForMoney": {
           "mentioned": false,
           "sentiment": null,
           "score": null,
           "matchedKeywords": [],
           "polarity": null
-        },
-        "portionSatisfaction": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "cleanliness": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "speed": {
-          "mentioned": true,
-          "sentiment": 0.2,
-          "score": 20,
-          "matchedKeywords": [
-            "for quite some time",
-            "left standing"
-          ],
-          "polarity": "negative"
-        },
-        "ambience": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "mesmerizing",
-            "unforgettable experience"
-          ],
-          "polarity": "positive"
-        },
-        "groupSuitability": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "dateSuitability": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "repeatVisitIntent": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "look forward to returning soon",
-            "returning soon",
-            "recommend this hotel to anyone",
-            "highly recommend"
-          ],
-          "polarity": "positive"
-        },
-        "viewQuality": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "bosphorus view",
-            "view room",
-            "spectacular",
-            "scenery was simply spectacular"
-          ],
-          "polarity": "positive"
-        },
-        "luxuryPerception": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        },
-        "reservationEase": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
-        }
-      }
-    },
-    {
-      "reviewId": "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rM2MxSmpRVzlJT0hoelUxcHhVRmhLYVY5YVIxRRAB",
-      "text": "It’s our first time in Istanbul and also first time staying at the Swissotel. The hotel is beautiful and service has been incredible. We loved the Executive Lounge’s food and drinks and most importantly our waitress Öznur. She was so wonderful, attentive, sweet and welcoming. Totally made our first evening and looking forward to more snacks and drinks up there because of her. Would 100% recommend to anyone! 😊",
-      "qualityCheck": {
-        "isUsable": true,
-        "reason": "accepted"
-      },
-      "propertySignals": {
-        "serviceQuality": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "service has been incredible"
-          ],
-          "polarity": "positive"
-        },
-        "staffFriendliness": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "welcoming"
-          ],
-          "polarity": "positive"
-        },
-        "foodQuality": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "food and drinks"
-          ],
-          "polarity": "positive"
         },
         "valueForMoney": {
           "mentioned": false,
@@ -228,14 +84,11 @@
           "polarity": null
         },
         "repeatVisitIntent": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "100% recommend",
-            "recommend to anyone"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "viewQuality": {
           "mentioned": false,
@@ -261,46 +114,35 @@
       }
     },
     {
-      "reviewId": "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTVdISnBOMnhhU0RGbWRtcGpla2wwWW0xVGJuYxAB",
-      "text": "My wife and I stayed at the Swissotel in early February, and it was, without question, the finest hotel experience we have ever had. Every detail, from the exceptional hospitality and outstanding meals to the immaculate room, thoughtful gifts, and true five-star service, made our stay unforgettable. We strongly recommend this hotel to anyone visiting Istanbul. From the moment we arrived, we were treated like family, and the consistent care from the staff made our visit especially meaningful. We would like to extend special thanks to Asli, Busra, and Nuray.\n\nAsli warmly introduced us to the hotel team, provided a wonderful tour of the property, arranged complimentary desserts and coffee, and recommended outstanding dining locations, including Madhu’s and the 16 Roof Bar. She also went above and beyond by helping my wife access a hotel computer to manage critical graduate school scheduling. Her generosity and professionalism truly represent the gold standard of service.\n\nBusra made every breakfast memorable. Each day she ensured we were well cared for, offering attentive service, friendly conversation, and helpful recommendations for must-see spots around Istanbul. She even organized a romantic pancake breakfast on our final morning. Her dedication, warmth, and exceptional work ethic made a lasting impression, and we are deeply grateful for her efforts.\n\nNuray was equally outstanding. She ensured every aspect of our stay met the highest standard and thoughtfully arranged a VIP visit to the executive lounge, where we enjoyed coffee with a breathtaking view of downtown Istanbul. Words cannot fully express our appreciation for her kindness and hospitality.\n\nDo not miss the opportunity to stay at the Swissotel. We promise you it is absolutely worth it!",
+      "reviewId": "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wc1dWbExhV1EyZURWTk1GOUpXSEpEZW1SUloxRRAB",
+      "text": "We had an absolutely wonderful 5 day stay at the CVK earlier this month. This was our second time there, the hotel is in a wonderful location, only a couple of minutes walk from Taksim Square. The service was outstanding, and we had access to the Club Lounge which definitely didn’t disappoint. The food was amazing and the service was even better. Tugay and Berhan were great. Special shoutout to the lovely and sweet Suden! She was absolutely amazing and so friendly and welcoming! Can’t wait to return!",
       "qualityCheck": {
         "isUsable": true,
         "reason": "accepted"
       },
       "propertySignals": {
         "serviceQuality": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "attentive service",
-            "five-star service",
-            "gold standard of service",
-            "exceptional hospitality"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "staffFriendliness": {
           "mentioned": true,
           "sentiment": 0.85,
           "score": 85,
           "matchedKeywords": [
-            "kind",
-            "friendly conversation",
-            "treated like family",
-            "warmly introduced"
+            "welcoming"
           ],
           "polarity": "positive"
         },
         "foodQuality": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "outstanding meals",
-            "breakfast memorable"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "valueForMoney": {
           "mentioned": false,
@@ -331,13 +173,11 @@
           "polarity": null
         },
         "ambience": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "breathtaking"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "groupSuitability": {
           "mentioned": false,
@@ -347,33 +187,25 @@
           "polarity": null
         },
         "dateSuitability": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "romantic"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "repeatVisitIntent": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "recommend this hotel to anyone",
-            "strongly recommend"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "viewQuality": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "breathtaking view",
-            "downtown istanbul"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "luxuryPerception": {
           "mentioned": false,
@@ -392,8 +224,8 @@
       }
     },
     {
-      "reviewId": "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT05XWjVTRXBIVERacWJqbExWREkyWkVJME5sRRAB",
-      "text": "Emirhan was helping us and kindly serving us. He truly is always around at the breakfast & lunch area. He even brought me a fruit platter with all the seasonal fruits & i loved it. Overall, Food 10/10, atmosphere 10/10 and Emirhan 10/10 for sure!!!\n\nI stayed in room 711 and oh my god the room was always clean, i mean always. I’d go have my breakfast at 9 am and when i come back at 10-10:30 am, i’d find this amazing house keeping Fehmiye organising it and cleaning it. I mean i keep important things in there and not once did i not trust this amazing lady Fehmiye. She’s so sweet, so clean and the rooms always smell great & amazing thanks to this beautiful soul in & out Fehmiye.",
+      "reviewId": "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT21wb05sWjZSa2h3WDJnMmVuaHlhV3hCVWpSRWVuYxAB",
+      "text": "CVK was my last stop, and it was the perfect way to end the journey.\nA truly beautiful hotel—spacious, luxurious, and thoughtfully designed. Just sitting on the bed and taking in the details of the walls, the ceiling, and the décor felt calming and indulgent. The garden view from the window added an extra layer of beauty.\n\nThe spaces are generous and elegant, the comfort is undeniable, and the service was outstanding. Every staff member was kind, attentive, and genuinely helpful. It was a seamless, beautiful experience and a memorable ending to the trip.",
       "qualityCheck": {
         "isUsable": true,
         "reason": "accepted"
@@ -437,22 +269,18 @@
           "polarity": null
         },
         "cleanliness": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "clean"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "speed": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "always around"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "ambience": {
           "mentioned": true,
@@ -478,13 +306,11 @@
           "polarity": null
         },
         "repeatVisitIntent": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "come back"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "viewQuality": {
           "mentioned": false,
@@ -494,11 +320,14 @@
           "polarity": null
         },
         "luxuryPerception": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "luxurious",
+            "elegant"
+          ],
+          "polarity": "positive"
         },
         "reservationEase": {
           "mentioned": false,
@@ -510,8 +339,8 @@
       }
     },
     {
-      "reviewId": "places/ChIJm9zzJnW3yhQRHmF9bN2hrZI/reviews/Ci9DQUlRQUNvZENodHljRjlvT21sWE5WRkhVM05RUkdwa2JGbExWVFJLVmsxa1lVRRAB",
-      "text": "I sincerely adored my stay and was genuinely disappointed to leave so soon. I truly wished I could have stayed longer. The room was impeccable, the cleanliness outstanding, and the service consistently excellent despite the hotel being fully packed and hosting VIP events. Even the marketing team, Zeineb and Ipek, embody a rare and exceptional attitude: “no problem we can’t solve, and we’ll go to any length to make you happy.” This is the true ethos of hospitality and exactly why guests choose one hotel over another, even within the same brand and group.\n\nTheir generosity shines through in every detail. The lady concierge managed to find things even ChatGPT couldn’t track down, which speaks volumes about her resourcefulness. As for the wonderful hostess manager, Lauretta, she makes you feel instantly at home, as if you were an old friend stopping by for a visit.\n\nAll of this reflects the strength of the general manager Utkan Gulacti leading the property.\n\nIn my opinion, a hotel represents not only its brand but also the team that brings it to life, and here, the entire team feels like a group of true stars. They deserve sincere applause. I wholeheartedly commend them for their attention to details, their quick response despite being extremely busy,  please keep  up the good work, and honestly, my next stay can only be in this hotel. They made leaving incredibly difficult and left me wishing I had spent my entire time there. I hope to see them soon.",
+      "reviewId": "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pndFNqVlFkbVZSWjFkTFdXYzJSbWwyZEd4MGFIYxAB",
+      "text": "Amazing hotel with great location.\nFeeling warm and like in a cocoon as soon as you enter from busy Taksim.\nThe gym club, the swimming pool and the spa with hammam are particularly well maintained and beautiful .\nSpecial thanks to Mr Erdem Can Erdoğan for his professionalism and sense of service. He made my experience at the gym and spa exceptional.",
       "qualityCheck": {
         "isUsable": true,
         "reason": "accepted"
@@ -553,13 +382,11 @@
           "polarity": null
         },
         "cleanliness": {
-          "mentioned": true,
-          "sentiment": 0.85,
-          "score": 85,
-          "matchedKeywords": [
-            "clean"
-          ],
-          "polarity": "positive"
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
         },
         "speed": {
           "mentioned": false,
@@ -569,11 +396,13 @@
           "polarity": null
         },
         "ambience": {
-          "mentioned": false,
-          "sentiment": null,
-          "score": null,
-          "matchedKeywords": [],
-          "polarity": null
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "beautiful"
+          ],
+          "polarity": "positive"
         },
         "groupSuitability": {
           "mentioned": false,
@@ -609,6 +438,118 @@
           "score": null,
           "matchedKeywords": [],
           "polarity": null
+        },
+        "reservationEase": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        }
+      }
+    },
+    {
+      "reviewId": "places/ChIJQ58j_vG3yhQRPWLdfZF6R1Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOclV6TndZMWhrYld4WmMxbERPR290VURsb04wRRAB",
+      "text": "From the moment we arrived, the experience at CVK Bosphorus was outstanding. The welcome from the entrance through to the hotel itself was elegant, warm, and incredibly well presented — everything felt refined and thoughtful.\n\nA special mention to Mert at the Stella Bar, whose exceptional service truly stood out. He made us feel genuinely at home and went above and beyond to ensure we had a great experience.\n\nA beautiful hotel with first-class hospitality. We’ll definitely be back.\nFrom the moment we arrived, the experience at CVK Bosphorus was outstanding. The welcome from the entrance through to the hotel itself was elegant, warm, and incredibly well presented — everything felt refined and thoughtful.\n\nA special mention to Mert at the Stella Bar, whose exceptional service truly stood out. He made us feel genuinely at home and went above and beyond to ensure we had a great experience.\n\nA beautiful hotel with first-class hospitality. We’ll definitely be back.",
+      "qualityCheck": {
+        "isUsable": true,
+        "reason": "accepted"
+      },
+      "propertySignals": {
+        "serviceQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "staffFriendliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "foodQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "valueForMoney": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "portionSatisfaction": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "cleanliness": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "speed": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "ambience": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "beautiful"
+          ],
+          "polarity": "positive"
+        },
+        "groupSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "dateSuitability": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "repeatVisitIntent": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "viewQuality": {
+          "mentioned": false,
+          "sentiment": null,
+          "score": null,
+          "matchedKeywords": [],
+          "polarity": null
+        },
+        "luxuryPerception": {
+          "mentioned": true,
+          "sentiment": 0.85,
+          "score": 85,
+          "matchedKeywords": [
+            "elegant"
+          ],
+          "polarity": "positive"
         },
         "reservationEase": {
           "mentioned": false,
